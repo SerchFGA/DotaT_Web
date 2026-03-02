@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos — DotaT | Suministros Tork Colombia</title>
+    <meta name="description"
+        content="Explora el catálogo completo de productos Tork disponibles a través de DotaT. Higiénicos, toallas, jabones, servilletas, dispensadores y combos para tu empresa.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar--scrolled" role="navigation" aria-label="Navegación principal">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo"><img src="Documentos_Primarios/Recursos/Logo_DotaT.jpeg"
+                    alt="DotaT"></a>
+            <button class="navbar__toggle" aria-label="Abrir menú"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="navbar__links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" style="color: var(--color-accent);">Catálogo</a></li>
+                <li><a href="sectores.html">Sectores</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="btn btn--primary">Cotizar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Catálogo de Productos</h1>
+            <p>Línea completa de suministros institucionales Tork. Filtra por categoría, calidad o sistema.</p>
+        </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section class="section">
+        <div class="container">
+            <div class="catalog-layout">
+                <!-- Sidebar Filters -->
+                <aside class="catalog-sidebar" id="filters">
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">Marca</h3>
+                        <label><input type="checkbox" value="tork" checked> Tork</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">Categoría</h3>
+                        <div id="filter-categorias"></div>
+                    </div>
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">Calidad</h3>
+                        <label><input type="checkbox" name="calidad" value="Premium"> Premium</label>
+                        <label><input type="checkbox" name="calidad" value="Advanced"> Advanced</label>
+                        <label><input type="checkbox" name="calidad" value="Universal"> Universal</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3 class="filter-group__title">Sistema</h3>
+                        <div id="filter-sistemas"></div>
+                    </div>
+                    <button class="btn btn--outline" style="width:100%;" onclick="clearFilters()">Limpiar
+                        Filtros</button>
+                </aside>
+
+                <!-- Product Grid -->
+                <div>
+                    <div class="flex justify-between items-center mb-8">
+                        <p id="results-count" style="margin:0; font-weight:500;"></p>
+                        <a href="Documentos_Primarios/Catalogo Tork al Por Mayor(2).pdf" download
+                            class="btn btn--outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Descargar PDF
+                        </a>
+                    </div>
+                    <div class="grid grid--3" id="product-grid">
+                        <!-- Products rendered by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container" style="position:relative;z-index:2;">
+            <h2>¿Encontraste lo que necesitas?</h2>
+            <p>Envíanos tu lista de productos y recibe una cotización personalizada en menos de 24 horas.</p>
+            <a href="contacto.html" class="btn btn--primary btn--lg">Solicitar Cotización</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="Documentos_Primarios/Recursos/Logo_DotaT.jpeg" alt="DotaT"
+                        style="height:36px;filter:brightness(0) invert(1);opacity:0.9;">
+                    <p>DotaT — Suministros y Dotaciones. Distribuidor autorizado Tork en Colombia.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Navegación</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="sectores.html">Sectores</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Productos</h4>
+                    <ul class="footer__links">
+                        <li><a href="#higienicos-jumbo">Higiénicos</a></li>
+                        <li><a href="#toallas-flujo-central">Toallas</a></li>
+                        <li><a href="#jabones">Jabones</a></li>
+                        <li><a href="#servilletas">Servilletas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Contacto</h4>
+                    <ul class="footer__links">
+                        <li><a href="contacto.html">Solicitar Cotización</a></li>
+                        <li><a href="mailto:contacto@dotat.co">contacto@dotat.co</a></li>
+                        <li>Barranquilla, Colombia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 DotaT — Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20cotizar%20productos%20DotaT"
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>

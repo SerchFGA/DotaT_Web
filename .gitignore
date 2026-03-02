@@ -1,0 +1,43 @@
+# === Dependencias de Node.js ===
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# === Documentos de Office ===
+*.docx
+*.xlsx
+*.doc
+*.xls
+
+# === Archivos de Sistema ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Archivos del Agente / Desarrollo Interno ===
+.agents/skills/
+.gemini/
+
+# === Documentos Primarios (solo se incluye el PDF del catálogo) ===
+Documentos_Primarios/Capturas catalogo Tork/
+Documentos_Primarios/Catalogo pagina web.xlsx
+Documentos_Primarios/Catalogo_Tork_Estructurado.md
+Documentos_Primarios/Competencia_y_Referencias_B2B.md
+Documentos_Primarios/Promp consulta enfoque pagina WEB.docx
+Documentos_Primarios/Promp_consulta.txt
+Documentos_Primarios/Promp_consulta_py.txt
+Documentos_Primarios/Prompt consulta enfoque página web
+Documentos_Primarios/Webs_References
+
+# === Variables de Entorno ===
+.env
+.env.local
+.env.*.local
+
+# === Editores ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
