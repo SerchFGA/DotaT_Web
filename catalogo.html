@@ -15,8 +15,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar--scrolled" role="navigation" aria-label="Navegación principal">
         <div class="container navbar__inner">
-            <a href="index.html" class="navbar__logo"><img src="assets/logo-dotat.jpeg"
-                    alt="DotaT"></a>
+            <a href="index.html" class="navbar__logo"><img src="assets/logo-dotat.jpeg" alt="DotaT"></a>
             <button class="navbar__toggle" aria-label="Abrir menú"
                 aria-expanded="false"><span></span><span></span><span></span></button>
             <ul class="navbar__links">
@@ -69,8 +68,7 @@
                 <div>
                     <div class="flex justify-between items-center mb-8">
                         <p id="results-count" style="margin:0; font-weight:500;"></p>
-                        <a href="assets/catalogo-tork.pdf" download
-                            class="btn btn--outline">
+                        <a href="assets/catalogo-tork.pdf" download class="btn btn--outline">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -138,6 +136,44 @@
             </div>
         </div>
     </footer>
+
+    <!-- PRODUCT DRAWER -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <aside class="drawer" id="product-drawer" aria-hidden="true">
+        <div class="drawer__header">
+            <span class="drawer__title">Detalle del Producto</span>
+            <button class="drawer__close" id="drawer-close" aria-label="Cerrar">✕</button>
+        </div>
+        <div class="drawer__image">
+            <div class="drawer__image-placeholder" id="drawer-img">—</div>
+        </div>
+        <div class="drawer__content">
+            <div class="drawer__badges" id="drawer-badges"></div>
+            <h2 class="drawer__product-name" id="drawer-name"></h2>
+            <p class="drawer__product-code" id="drawer-code"></p>
+
+            <!-- Descripción (lista para cuando haya contenido) -->
+            <div class="drawer__description" id="drawer-description" style="display:none;">
+                <h4
+                    style="margin-bottom:var(--space-2);font-size:var(--text-sm);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:0.05em;">
+                    Descripción</h4>
+                <p id="drawer-desc-text"
+                    style="font-size:var(--text-sm);color:var(--color-text-body);line-height:1.7;margin-bottom:var(--space-6);">
+                </p>
+            </div>
+
+            <table class="specs-table" id="drawer-specs">
+                <!-- Populated by JS -->
+            </table>
+
+            <div class="drawer__actions">
+                <a href="#" class="btn btn--primary btn--lg" id="drawer-cotizar"
+                    style="width:100%;justify-content:center;">Cotizar este producto →</a>
+                <a href="assets/catalogo-tork.pdf" download class="btn btn--outline"
+                    style="width:100%;justify-content:center;">📄 Descargar Catálogo PDF</a>
+            </div>
+        </div>
+    </aside>
 
     <a href="https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20cotizar%20productos%20DotaT"
         class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">

@@ -116,13 +116,13 @@ function renderProducts(products) {
 
         return `
       <div class="card product-card" data-animate>
-        <div class="product-card__img-wrap">
+        <div class="product-card__img-wrap" style="cursor:pointer;" onclick="openDrawer('${p.codigo}')">
           <img class="product-card__img" src="https://placehold.co/200x160/F8FAFC/2D2B3F?text=${encodeURIComponent(p.codigo)}" alt="${p.nombre}">
         </div>
         <div class="product-card__body">
           <span class="product-card__brand">Tork</span>
           ${p.calidad ? `<span class="product-card__quality ${qualityClass}">${p.calidad}</span>` : ''}
-          <h4 class="product-card__name">${p.nombre}</h4>
+          <h4 class="product-card__name" style="cursor:pointer;" onclick="openDrawer('${p.codigo}')">${p.nombre}</h4>
           <p class="product-card__code">Cód. ${p.codigo} · ${p.presentacion || ''}</p>
           ${specs.length > 0 ? `<p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.25rem 0 0;">${specs.join(' · ')}</p>` : ''}
         </div>
@@ -166,3 +166,78 @@ function getCatNameFromId(id) {
     }
     return '';
 }
+
+/* ============================================
+   Product Detail Drawer
+   ============================================ */
+
+function openDrawer(codigo) {
+    const product = allProducts.find(p => String(p.codigo) === String(codigo));
+    if (!product) return;
+
+    // Image placeholder
+    document.getElementById('drawer-img').textContent = product.codigo;
+
+    // Badges
+    const badgesEl = document.getElementById('drawer-badges');
+    let badgesHTML = '<span class="product-card__brand">Tork</span>';
+    if (product.calidad) {
+        badgesHTML += `<span class="product-card__quality product-card__quality--${product.calidad.toLowerCase()}">${product.calidad}</span>`;
+    }
+    badgesEl.innerHTML = badgesHTML;
+
+    // Name & Code
+    document.getElementById('drawer-name').textContent = product.nombre;
+    document.getElementById('drawer-code').textContent = `Código: ${product.codigo} · ${product.presentacion || ''}`;
+
+    // Description (shown only if available)
+    const descSection = document.getElementById('drawer-description');
+    const descText = document.getElementById('drawer-desc-text');
+    if (product.descripcion) {
+        descText.textContent = product.descripcion;
+        descSection.style.display = 'block';
+    } else {
+        descSection.style.display = 'none';
+    }
+
+    // Specs table
+    const specsEl = document.getElementById('drawer-specs');
+    const specRows = [];
+    if (product.calidad) specRows.push(['Calidad', product.calidad]);
+    if (product.tamano) specRows.push(['Tamaño', product.tamano]);
+    if (product.capas) specRows.push(['Capas', `${product.capas} capa${product.capas > 1 ? 's' : ''}`]);
+    if (product.color) specRows.push(['Color', product.color]);
+    if (product.presentacion) specRows.push(['Presentación', product.presentacion]);
+    if (product.sistema) specRows.push(['Sistema', product.sistema]);
+    if (product.categoria) specRows.push(['Categoría', product.categoria]);
+    if (product.fsc) specRows.push(['Certificación', '<span class="fsc-badge">🌿 FSC Certificado</span>']);
+
+    specsEl.innerHTML = specRows.map(([label, val]) =>
+        `<tr><th>${label}</th><td>${val}</td></tr>`
+    ).join('');
+
+    // Cotizar button
+    document.getElementById('drawer-cotizar').href = `contacto.html?producto=${product.codigo}`;
+
+    // Open
+    document.getElementById('drawer-overlay').classList.add('active');
+    document.getElementById('product-drawer').classList.add('active');
+    document.getElementById('product-drawer').setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+    document.getElementById('drawer-overlay').classList.remove('active');
+    document.getElementById('product-drawer').classList.remove('active');
+    document.getElementById('product-drawer').setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+// Event listeners for drawer close
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('drawer-close')?.addEventListener('click', closeDrawer);
+    document.getElementById('drawer-overlay')?.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDrawer();
+    });
+});
