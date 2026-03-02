@@ -18,16 +18,8 @@ desktop.ini
 .agents/skills/
 .gemini/
 
-# === Documentos Primarios (solo se incluye el PDF del catálogo) ===
-Documentos_Primarios/Capturas catalogo Tork/
-Documentos_Primarios/Catalogo pagina web.xlsx
-Documentos_Primarios/Catalogo_Tork_Estructurado.md
-Documentos_Primarios/Competencia_y_Referencias_B2B.md
-Documentos_Primarios/Promp consulta enfoque pagina WEB.docx
-Documentos_Primarios/Promp_consulta.txt
-Documentos_Primarios/Promp_consulta_py.txt
-Documentos_Primarios/Prompt consulta enfoque página web
-Documentos_Primarios/Webs_References
+# === Documentos Primarios (carpeta interna, no se sube a GitHub) ===
+Documentos_Primarios/
 
 # === Variables de Entorno ===
 .env
