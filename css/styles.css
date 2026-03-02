@@ -589,6 +589,8 @@ p {
 /* Product Card */
 .product-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__img-wrap {
@@ -607,6 +609,9 @@ p {
 
 .product-card__body {
   padding: var(--space-5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card__brand {
@@ -650,6 +655,7 @@ p {
   font-size: var(--text-base);
   color: var(--color-text-primary);
   margin: var(--space-2) 0;
+  flex: 1;
 }
 
 .product-card__code {
@@ -661,6 +667,7 @@ p {
   padding: 0 var(--space-5) var(--space-5);
   display: flex;
   gap: var(--space-2);
+  margin-top: auto;
 }
 
 /* --- CTA Banner --- */
@@ -964,6 +971,8 @@ p {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
 }
 
 .filter-group {
