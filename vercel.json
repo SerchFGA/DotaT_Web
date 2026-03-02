@@ -1,18 +1,4 @@
 {
-    "version": 2,
-    "name": "dotat-web",
-    "builds": [
-        {
-            "src": "**/*",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/$1"
-        }
-    ],
     "headers": [
         {
             "source": "/(.*)",
@@ -54,7 +40,7 @@
             ]
         },
         {
-            "source": "/data/(.*)",
+            "source": "/assets/(.*)",
             "headers": [
                 {
                     "key": "Cache-Control",
@@ -62,5 +48,7 @@
                 }
             ]
         }
-    ]
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
 }
