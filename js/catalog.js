@@ -61,6 +61,7 @@ function buildFilterUI() {
     // Attach event listeners
     document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
         cb.addEventListener('change', applyFilters);
+        cb.addEventListener('change', updateFilterBadge);
     });
 }
 
@@ -83,6 +84,7 @@ function applyFilters() {
     }
 
     renderProducts(filtered);
+    updateFilterBadge();
 }
 
 function getChecked(name) {
@@ -94,6 +96,7 @@ function clearFilters() {
         if (cb.value !== 'tork') cb.checked = false;
     });
     renderProducts(allProducts);
+    updateFilterBadge();
 }
 
 // Render product cards
@@ -114,10 +117,14 @@ function renderProducts(products) {
         if (p.capas) specs.push(`${p.capas} capa${p.capas > 1 ? 's' : ''}`);
         if (p.sistema) specs.push(`Sistema ${p.sistema}`);
 
+        const imgSrc = p.imagen
+            ? p.imagen
+            : `https://placehold.co/200x160/F8FAFC/2D2B3F?text=${encodeURIComponent(p.codigo)}`;
+
         return `
       <div class="card product-card" data-animate>
         <div class="product-card__img-wrap" style="cursor:pointer;" onclick="openDrawer('${p.codigo}')">
-          <img class="product-card__img" src="https://placehold.co/200x160/F8FAFC/2D2B3F?text=${encodeURIComponent(p.codigo)}" alt="${p.nombre}">
+          <img class="product-card__img" src="${imgSrc}" alt="${p.nombre}" loading="lazy" onerror="this.src='https://placehold.co/200x160/F8FAFC/2D2B3F?text=${encodeURIComponent(p.codigo)}'">
         </div>
         <div class="product-card__body">
           <span class="product-card__brand">Tork</span>
@@ -175,8 +182,19 @@ function openDrawer(codigo) {
     const product = allProducts.find(p => String(p.codigo) === String(codigo));
     if (!product) return;
 
-    // Image placeholder
-    document.getElementById('drawer-img').textContent = product.codigo;
+    // Product image
+    const drawerImg = document.getElementById('drawer-img');
+    const drawerFallback = document.getElementById('drawer-img-fallback');
+    if (product.imagen) {
+        drawerImg.src = product.imagen;
+        drawerImg.alt = product.nombre;
+        drawerImg.style.display = 'block';
+        drawerFallback.style.display = 'none';
+    } else {
+        drawerImg.style.display = 'none';
+        drawerFallback.style.display = 'flex';
+        drawerFallback.textContent = product.codigo;
+    }
 
     // Badges
     const badgesEl = document.getElementById('drawer-badges');
@@ -238,6 +256,65 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('drawer-close')?.addEventListener('click', closeDrawer);
     document.getElementById('drawer-overlay')?.addEventListener('click', closeDrawer);
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeDrawer();
+        if (e.key === 'Escape') {
+            closeDrawer();
+            closeMobileFilters();
+        }
+    });
+});
+
+/* ============================================
+   Mobile Filter Bottom Sheet
+   ============================================ */
+
+function openMobileFilters() {
+    const sidebar = document.getElementById('filters');
+    const overlay = document.getElementById('filter-overlay');
+    const fab = document.getElementById('filter-fab');
+    sidebar.classList.add('mobile-open');
+    overlay.classList.add('active');
+    fab.classList.add('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMobileFilters() {
+    const sidebar = document.getElementById('filters');
+    const overlay = document.getElementById('filter-overlay');
+    const fab = document.getElementById('filter-fab');
+    sidebar.classList.remove('mobile-open');
+    overlay.classList.remove('active');
+    fab.classList.remove('hidden');
+    document.body.style.overflow = '';
+}
+
+function updateFilterBadge() {
+    const count = document.querySelectorAll('#filters input[type="checkbox"]:checked:not([value="tork"])').length;
+    const badge = document.getElementById('filter-badge');
+    if (badge) {
+        if (count > 0) {
+            badge.textContent = count;
+            badge.style.display = 'flex';
+        } else {
+            badge.style.display = 'none';
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // FAB opens filters
+    document.getElementById('filter-fab')?.addEventListener('click', openMobileFilters);
+
+    // Close button inside bottom sheet
+    document.getElementById('filter-close')?.addEventListener('click', closeMobileFilters);
+
+    // Overlay click closes filters
+    document.getElementById('filter-overlay')?.addEventListener('click', closeMobileFilters);
+
+    // "Ver resultados" button closes sheet
+    document.getElementById('filter-apply')?.addEventListener('click', closeMobileFilters);
+
+    // Update badge when filters change
+    document.querySelectorAll('#filters input[type="checkbox"]').forEach(cb => {
+        cb.addEventListener('change', updateFilterBadge);
     });
 });
