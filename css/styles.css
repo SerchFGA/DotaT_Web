@@ -3,7 +3,7 @@
    ============================================ */
 
 /* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
 
 /* --- Design Tokens --- */
 :root {
@@ -26,7 +26,7 @@
   --color-text-muted: #94A3B8;
 
   /* Typography */
-  --font-heading: 'Outfit', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Inter', sans-serif;
 
   /* Font Sizes (Fluid) */
@@ -428,6 +428,16 @@ p {
   pointer-events: none;
 }
 
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6 L28 20 L20 34' fill='none' stroke='rgba(24,201,149,0.04)' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .hero__content {
   position: relative;
   z-index: 2;
@@ -476,7 +486,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: var(--space-12);
-  padding: var(--space-6) 0;
+  padding: var(--space-8) 0;
   flex-wrap: wrap;
 }
 
@@ -485,18 +495,18 @@ p {
   align-items: center;
   gap: var(--space-3);
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-text-primary);
 }
 
 .trust-item__icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-accent-light);
-  color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-white);
   border-radius: var(--radius-md);
   font-size: var(--text-lg);
   flex-shrink: 0;
@@ -515,6 +525,11 @@ p {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+}
+
+/* Category card hover glow */
+.category-card:hover {
+  box-shadow: 0 8px 30px rgba(24, 201, 149, 0.15), var(--shadow-lg);
 }
 
 /* Category Card */
@@ -934,6 +949,91 @@ p {
 [data-animate].animate-in {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Stagger delays for grid children */
+[data-animate]:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+[data-animate]:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+[data-animate]:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
+[data-animate]:nth-child(5) {
+  transition-delay: 0.32s;
+}
+
+[data-animate]:nth-child(6) {
+  transition-delay: 0.40s;
+}
+
+/* --- How It Works Section --- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  counter-reset: step;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.step__number {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+  background: linear-gradient(135deg, var(--color-accent), #14b383);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: var(--text-xl);
+}
+
+.step__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.step__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* Connector lines between steps */
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: calc(50% + 36px);
+  width: calc(100% - 72px);
+  height: 2px;
+  background: linear-gradient(to right, var(--color-accent), var(--color-border));
+  opacity: 0.4;
+}
+
+@media (max-width: 640px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .step:not(:last-child)::after {
+    display: none;
+  }
 }
 
 /* --- Page Header (for subpages) --- */

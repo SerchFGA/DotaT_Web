@@ -7,8 +7,68 @@
   <title>DotaT — Insumos Institucionales e Industriales para Empresas | Colombia</title>
   <meta name="description"
     content="DotaT comercializa y distribuye insumos institucionales e industriales para el sector empresarial en Colombia. Aseo profesional, equipos de limpieza, EPP y suministros de consumo masivo respaldados por marcas reconocidas.">
+  <link rel="canonical" href="https://dotat.com.co/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DotaT — Insumos Institucionales e Industriales para Empresas">
+  <meta property="og:description"
+    content="Aseo profesional, equipos de limpieza, EPP y suministros operativos para hoteles, restaurantes, industria, comercio y oficinas en Colombia.">
+  <meta property="og:url" content="https://dotat.com.co/">
+  <meta property="og:site_name" content="DotaT">
+  <meta property="og:locale" content="es_CO">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://dotat.com.co/#organization",
+        "name": "DotaT — Suministros y Dotaciones",
+        "url": "https://dotat.com.co",
+        "description": "Comercialización y distribución de insumos institucionales e industriales para el sector empresarial en Colombia.",
+        "email": "ventas@dotat.com.co",
+        "telephone": "+573005396697",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barranquilla",
+          "addressCountry": "CO"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+573005396697",
+            "contactType": "sales",
+            "email": "ventas@dotat.com.co",
+            "availableLanguage": "Spanish"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "servicioalcliente@dotat.com.co",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish"
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://dotat.com.co/#website",
+        "url": "https://dotat.com.co",
+        "name": "DotaT",
+        "publisher": { "@id": "https://dotat.com.co/#organization" }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -48,8 +108,8 @@
           elementos de protección personal y suministros operativos para hoteles, restaurantes, industria, comercio y
           oficinas. Cotiza sin compromiso.</p>
         <div class="hero__actions">
-          <a href="catalogo.html" class="btn btn--primary btn--lg">Ver Catálogo</a>
-          <a href="contacto.html" class="btn btn--outline btn--lg">Solicitar Cotización</a>
+          <a href="contacto.html" class="btn btn--primary btn--lg">Cotiza Ahora — Respuesta en 24h</a>
+          <a href="catalogo.html" class="btn btn--outline btn--lg">Ver Catálogo</a>
         </div>
       </div>
     </div>
@@ -206,6 +266,35 @@
     </div>
   </section>
 
+  <!-- ========== CÓMO FUNCIONA ========== -->
+  <section class="section section--surface" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <h2>¿Cómo Funciona?</h2>
+        <p>Abastecerte es simple. Tres pasos y tu empresa opera sin interrupciones.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-animate>
+          <div class="step__number">1</div>
+          <h3 class="step__title">Cotiza</h3>
+          <p class="step__desc">Envíanos tus requerimientos por formulario o WhatsApp. Sin compromiso.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step__number">2</div>
+          <h3 class="step__title">Recibe tu propuesta</h3>
+          <p class="step__desc">En menos de 24 horas hábiles recibirás una cotización personalizada con precios y
+            disponibilidad.</p>
+        </div>
+        <div class="step" data-animate>
+          <div class="step__number">3</div>
+          <h3 class="step__title">Te abastecemos</h3>
+          <p class="step__desc">Despachamos a cualquier ciudad de Colombia. Abastecimiento recurrente a la medida de tu
+            operación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== DESCARGA CATÁLOGO ========== -->
   <section class="section" id="descarga">
     <div class="container text-center">
@@ -214,7 +303,7 @@
         <p>Consulta nuestra línea completa de insumos institucionales e industriales con todas las especificaciones
           técnicas.</p>
       </div>
-      <a href="assets/catalogo-tork.pdf" download class="btn btn--primary btn--lg">
+      <a href="assets/catalogo-tork.pdf" download class="btn btn--outline btn--lg">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
           <polyline points="7 10 12 15 17 10" />
@@ -228,9 +317,9 @@
   <!-- ========== CTA FINAL ========== -->
   <section class="cta-banner">
     <div class="container" style="position: relative; z-index: 2;">
-      <h2>¿Listo para cotizar tus suministros?</h2>
+      <h2>¿Listo para abastecer tu empresa?</h2>
       <p>Envíanos tus requerimientos y recibe una cotización personalizada en menos de 24 horas hábiles.</p>
-      <a href="contacto.html" class="btn btn--primary btn--lg">Solicitar Cotización</a>
+      <a href="contacto.html" class="btn btn--primary btn--lg">Cotiza Ahora</a>
     </div>
   </section>
 
