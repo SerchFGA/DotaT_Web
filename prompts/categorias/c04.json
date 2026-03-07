@@ -1,8 +1,0 @@
-{
-    "prompt": "Ultra-realistic industrial photography. Professional industrial floor cleaning equipment lineup: a heavy-duty floor scrubber machine, an industrial vacuum cleaner, and professional brooms and mops. Placed in a clean, expansive warehouse or factory floor with concrete textures. Organized display. Bright, realistic industrial warehouse lighting with some shadows. Shot on a 35mm wide lens, f/5.6, ISO 200, capturing the deep depth of the warehouse and the rugged matte plastic and metal textures of the machinery. Latin American institutional setting, cool color temperature.",
-    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture, small domestic vacuum",
-    "api_parameters": {
-        "resolution": "1K",
-        "output_format": "webp"
-    }
-}

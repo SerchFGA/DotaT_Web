@@ -1,8 +1,0 @@
-{
-    "prompt": "Ultra-realistic product photography flat lay. Personal protective equipment (PPE) neatly arranged on a rugged industrial steel surface with subtle micro-scratches. Includes heavy-duty safety gloves, clear safety glasses with realistic reflections, a yellow hard hat with matte finish, N95 face masks, and ear protection. Organized flat lay style, industrial safety theme. Shot overhead on a 50mm lens, f/8.0, ISO 100 for maximum edge-to-edge sharpness. Cold steel tones, highly detailed textures.",
-    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture",
-    "api_parameters": {
-        "resolution": "1K",
-        "output_format": "webp"
-    }
-}

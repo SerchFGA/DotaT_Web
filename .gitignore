@@ -33,3 +33,9 @@ Documentos_Primarios/
 *.ntvs*
 *.njsproj
 *.sln
+
+# === Generación de Imágenes (Nano Banana) ===
+scripts/
+prompts/
+run_output*.txt
+gemini.md

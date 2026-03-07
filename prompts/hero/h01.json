@@ -1,9 +1,0 @@
-{
-    "prompt": "Wide angle view of a massive institutional supply warehouse. Organized tall steel shelving packed tightly with cleaning products, commercial vacuums, and industrial supplies in bulk boxes. Dramatic depth of field, leading the eye down a massive aisle. Dark moody cinematic lighting with distinct subtle mint green accent lights (#18C995) glowing softly from behind the shelving. Professional industrial photography, hyper-realistic, unretouched texture on the concrete floor and steel racks. Shot on a 24mm wide lens, f/8.0, ISO 400. Cold, professional corporate tones matching an anthracite #2D2B3F palette.",
-    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture, domestic space",
-    "api_parameters": {
-        "resolution": "1K",
-        "output_format": "webp",
-        "aspect_ratio": "16:9"
-    }
-}

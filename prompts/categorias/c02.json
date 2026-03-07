@@ -1,8 +1,0 @@
-{
-    "prompt": "Ultra-realistic architectural photography. Close-up of a wall-mounted paper towel dispenser and liquid soap dispenser in a modern luxury hotel bathroom in a Latin American corporate setting. Sleek ceramic tiles with subtle grout textures, chrome fixtures reflecting the environment. Clean corporate restroom scene, perfectly hygienic. Professional photography, cool atmospheric lighting, minimal design. Shot on a 50mm lens, f/2.8, ISO 200, capturing the physical realism of the plastic and chrome materials with micro-scratches and realistic specularity. Cool tones, sterile clean feeling.",
-    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture",
-    "api_parameters": {
-        "resolution": "1K",
-        "output_format": "webp"
-    }
-}
