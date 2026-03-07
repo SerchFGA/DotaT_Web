@@ -1,0 +1,8 @@
+{
+    "prompt": "Ultra-realistic food service photography. Elegant restaurant table setting with an institutional napkin dispenser at the center, accompanied by professional stainless steel cutlery and pristine white dinnerware. Clean white textured tablecloth. Authentic food service environment. Warm but clean and sharp lighting mimicking high-end Latin American restaurant interiors. Shot on an 85mm lens, f/2.2, ISO 400 for a shallow depth of field, blurring the background restaurant slightly while keeping the supplies tack sharp. Realistic material physics, subtle metallic wear on the dispenser.",
+    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture, messy table",
+    "api_parameters": {
+        "resolution": "1K",
+        "output_format": "webp"
+    }
+}

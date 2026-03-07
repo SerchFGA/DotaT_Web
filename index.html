@@ -93,7 +93,8 @@
   </nav>
 
   <!-- ========== HERO ========== -->
-  <section class="hero" id="inicio">
+  <section class="hero" id="inicio"
+    style="background: linear-gradient(rgba(36, 41, 46, 0.85), rgba(36, 41, 46, 0.85)), url('images/hero/h01.webp') center/cover no-repeat;">
     <div class="container">
       <div class="hero__content">
         <span class="hero__badge">
@@ -119,12 +120,11 @@
   <section class="trust-bar">
     <div class="container trust-bar__inner">
       <div class="trust-item">
-        <div class="trust-item__icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-          </svg>
+        <div class="trust-item__icon" style="background:transparent;">
+          <img src="images/extras/e05.webp" alt="Sello de Calidad DotaT"
+            style="width: 100%; height: 100%; object-fit: contain;">
         </div>
-        <span>Marcas reconocidas a nivel nacional</span>
+        <span>Garantía de Calidad Institucional</span>
       </div>
       <div class="trust-item">
         <div class="trust-item__icon">
@@ -169,42 +169,42 @@
       </div>
       <div class="grid grid--3">
         <a href="catalogo.html#higienicos-jumbo" class="category-card" data-animate>
-          <img class="category-card__img" src="https://placehold.co/400x300/F8FAFC/2D2B3F?text=Aseo+Institucional"
+          <img class="category-card__img" src="images/categorias/c01.webp" loading="lazy"
             alt="Insumos de Aseo Institucional">
           <div class="category-card__overlay">
             <span class="category-card__title">🧹 Aseo Institucional</span>
           </div>
         </a>
         <a href="catalogo.html#toallas-flujo-central" class="category-card" data-animate>
-          <img class="category-card__img" src="https://placehold.co/400x300/F8FAFC/2D2B3F?text=Toallas+y+Jabones"
+          <img class="category-card__img" src="images/categorias/c02.webp" loading="lazy"
             alt="Toallas y Jabones Institucionales">
           <div class="category-card__overlay">
             <span class="category-card__title">🤲 Toallas y Jabones</span>
           </div>
         </a>
         <a href="catalogo.html#servilletas" class="category-card" data-animate>
-          <img class="category-card__img" src="https://placehold.co/400x300/F8FAFC/2D2B3F?text=Servilletas"
+          <img class="category-card__img" src="images/categorias/c03.webp" loading="lazy"
             alt="Servilletas Institucionales">
           <div class="category-card__overlay">
             <span class="category-card__title">🍽️ Servilletas</span>
           </div>
         </a>
         <a href="catalogo.html" class="category-card" data-animate>
-          <img class="category-card__img" src="https://placehold.co/400x300/F8FAFC/2D2B3F?text=Equipos+de+Limpieza"
+          <img class="category-card__img" src="images/categorias/c04.webp" loading="lazy"
             alt="Equipos y Accesorios de Limpieza Profesional">
           <div class="category-card__overlay">
             <span class="category-card__title">🔧 Equipos de Limpieza</span>
           </div>
         </a>
         <a href="catalogo.html" class="category-card" data-animate>
-          <img class="category-card__img" src="https://placehold.co/400x300/F8FAFC/2D2B3F?text=EPP"
-            alt="Elementos de Protección Personal">
+          <img class="category-card__img" src="images/categorias/c05.webp" loading="lazy"
+            alt="Elementos de Protección Personal (EPP)">
           <div class="category-card__overlay">
             <span class="category-card__title">🛡️ Protección Personal (EPP)</span>
           </div>
         </a>
         <a href="catalogo.html" class="category-card" data-animate>
-          <img class="category-card__img" src="https://placehold.co/400x300/F8FAFC/2D2B3F?text=Consumo+Institucional"
+          <img class="category-card__img" src="images/categorias/c06.webp" loading="lazy"
             alt="Insumos de Consumo Institucional">
           <div class="category-card__overlay">
             <span class="category-card__title">📦 Consumo Institucional</span>
@@ -213,6 +213,33 @@
       </div>
       <div class="text-center mt-8">
         <a href="catalogo.html" class="btn btn--outline">Ver catálogo completo →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHATSAPP BANNERR ========== -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="grid grid--2"
+        style="align-items: center; background: var(--color-surface); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border);">
+        <div style="padding: var(--space-8) var(--space-12);">
+          <h2 style="margin-bottom: var(--space-4);">Resolución inmediata a tus requerimientos</h2>
+          <p class="text-muted" style="margin-bottom: var(--space-6);">Sabemos que el abastecimiento continuo es
+            críitico para tu operación. Contáctanos por WhatsApp para cotizaciones rápidas, disponibilidad de inventario
+            o asistencia inmediata.</p>
+          <a href="https://wa.me/573005396697?text=Hola%2C%20me%20interesa%20cotizar%20productos%20DotaT"
+            class="btn btn--primary" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Inicia un chat ahora
+          </a>
+        </div>
+        <div>
+          <img src="images/extras/e01.webp" alt="Atención rápida por WhatsApp"
+            style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -290,6 +317,72 @@
           <h3 class="step__title">Te abastecemos</h3>
           <p class="step__desc">Despachamos a cualquier ciudad de Colombia. Abastecimiento recurrente a la medida de tu
             operación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Empresas de toda Colombia confían en DotaT para su abastecimiento continuo.</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+          <div style="color: #fbbf24; font-size: 1.25rem;">★★★★★</div>
+          <p style="font-style: italic; color: var(--color-text-primary); flex-grow: 1;">"DotaT ha transformado nuestra
+            forma de abastecernos. La puntualidad en las entregas y la calidad de los productos, especialmente los
+            higiénicos, superaron nuestras expectativas."</p>
+          <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4);">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; background: var(--color-surface); flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+              <img src="images/extras/e06.webp" alt="Carolina Restrepo"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div>
+              <p style="font-weight: 700; margin: 0; font-family: var(--font-heading);">Carolina R.</p>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin: 0;">Directora de Compras,
+                Sector Hotelero</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+          <div style="color: #fbbf24; font-size: 1.25rem;">★★★★★</div>
+          <p style="font-style: italic; color: var(--color-text-primary); flex-grow: 1;">"El acompañamiento comercial es
+            excelente. Nos asesoraron en la elección de EPP para nuestra planta de manufactura y los resultados en
+            seguridad y costos han sido notables."</p>
+          <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4);">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; background: var(--color-surface); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--color-accent); border: 2px solid var(--color-accent-light);">
+              MV
+            </div>
+            <div>
+              <p style="font-weight: 700; margin: 0; font-family: var(--font-heading);">Martín V.</p>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin: 0;">Jefe de Planta, Sector
+                Industrial</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+          <div style="color: #fbbf24; font-size: 1.25rem;">★★★★★</div>
+          <p style="font-style: italic; color: var(--color-text-primary); flex-grow: 1;">"Soluciones rápidas y
+            efectivas. Como cadena de restaurantes, el suministro de servilletas y jabones es crítico, y DotaT nunca nos
+            ha fallado. Muy recomendados."</p>
+          <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4);">
+            <div
+              style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; background: var(--color-surface); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--color-accent); border: 2px solid var(--color-accent-light);">
+              AG
+            </div>
+            <div>
+              <p style="font-weight: 700; margin: 0; font-family: var(--font-heading);">Andrea G.</p>
+              <p style="font-size: var(--text-sm); color: var(--color-text-muted); margin: 0;">Gerente Operativa, Food
+                Service</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

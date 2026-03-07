@@ -1,0 +1,8 @@
+{
+    "prompt": "Ultra-realistic documentary photography. Institutional consumption supplies stored on heavily organized industrial warehouse shelving. Bulk toilet paper rolls wrapped in clear industrial plastic, stacks of disposable cups, and paper products. Clean, vast stockroom environment with concrete floor. Professional inventory photography. Well-lit industrial storage with overhead fluorescent lights and natural light bleeding from loading docks. Shot on a 35mm lens, f/5.6, ISO 200, capturing the immense scale of the warehouse and the realistic plastic and paper textures with high fidelity. Latin American supply center.",
+    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture",
+    "api_parameters": {
+        "resolution": "1K",
+        "output_format": "webp"
+    }
+}

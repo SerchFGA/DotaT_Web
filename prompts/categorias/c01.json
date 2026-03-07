@@ -1,0 +1,8 @@
+{
+    "prompt": "Ultra-realistic documentary photography. Professional institutional cleaning cart in a modern corporate building hallway in a Latin American setting. Organized cleaning supplies, branded bottles, mop buckets. Shiny polished porcelain floor reflecting the light. Bright natural daylight streaming through large windows mixed with cool fluorescent overhead lighting, creating a clean, pristine, realistic corporate environment. Shot on an 85mm lens, f/4.0, ISO 100 for maximum clarity and deep depth of field. No stylized lighting, no artificial studio look, pure physical realism. Cold corporate tones, dark charcoal shadows and subtle mint green reflections.",
+    "negative_prompt": "blurry, low resolution, overexposed, cartoon, CGI, oversaturated colors, 3D render, illustration, digital painting, watermarks, text, artificial glow, plastic textures, hyper-stylized lighting, unreal engine, smooth surfaces without texture",
+    "api_parameters": {
+        "resolution": "1K",
+        "output_format": "webp"
+    }
+}

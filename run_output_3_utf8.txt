@@ -1,0 +1,99 @@
+﻿Starting job for images/categorias/c01.webp...
+Starting job for images/categorias/c02.webp...
+Starting job for images/categorias/c03.webp...
+Starting job for images/categorias/c04.webp...
+Starting job for images/categorias/c05.webp...
+Starting job for images/categorias/c06.webp...
+Starting job for images/hero/h01.webp...
+Waiting for 7 parallel jobs to complete...
+--- Output for images/categorias/c01.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/categorias/c01.webp
+--- Output for images/categorias/c02.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/categorias/c02.webp
+--- Output for images/categorias/c03.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/categorias/c03.webp
+--- Output for images/categorias/c04.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/categorias/c04.webp
+--- Output for images/categorias/c05.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/categorias/c05.webp
+--- Output for images/categorias/c06.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/categorias/c06.webp
+--- Output for images/hero/h01.webp ---
+Creating task via Kie.ai API...
+ERROR: No taskId returned by API
+HTTP Status Area:
+Status Code: 200
+Full API JSON Response:
+{
+  "code": 500,
+  "msg": "output_format is not within the range of allowed options",
+  "data": null
+}
+
+FAILED: images/hero/h01.webp

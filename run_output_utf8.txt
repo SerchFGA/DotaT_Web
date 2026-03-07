@@ -1,0 +1,36 @@
+﻿Starting job for images/categorias/c01.webp...
+Starting job for images/categorias/c02.webp...
+Starting job for images/categorias/c03.webp...
+Starting job for images/categorias/c04.webp...
+Starting job for images/categorias/c05.webp...
+Starting job for images/categorias/c06.webp...
+Starting job for images/hero/h01.webp...
+Waiting for 7 parallel jobs to complete...
+--- Output for images/categorias/c01.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/categorias/c01.webp
+--- Output for images/categorias/c02.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/categorias/c02.webp
+--- Output for images/categorias/c03.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/categorias/c03.webp
+--- Output for images/categorias/c04.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/categorias/c04.webp
+--- Output for images/categorias/c05.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/categorias/c05.webp
+--- Output for images/categorias/c06.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/categorias/c06.webp
+--- Output for images/hero/h01.webp ---
+ERROR: .env not found at C:\Users\sergi\Documents\Antigravit_Projects\DotaT Web Page Proj\.agents\skills\nano_banana_image_generation\scripts\..\.env
+
+FAILED: images/hero/h01.webp

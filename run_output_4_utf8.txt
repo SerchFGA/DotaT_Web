@@ -1,0 +1,101 @@
+﻿Starting job for images/categorias/c01.webp...
+Starting job for images/categorias/c02.webp...
+Starting job for images/categorias/c03.webp...
+Starting job for images/categorias/c04.webp...
+Starting job for images/categorias/c05.webp...
+Starting job for images/categorias/c06.webp...
+Starting job for images/hero/h01.webp...
+Waiting for 7 parallel jobs to complete...
+--- Output for images/categorias/c01.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: 0e09498051a98cacd8625db0c9a986fd. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = success
+Downloading image from https://tempfile.aiquickdraw.com/r/0e09498051a98cacd8625db0c9a986fd_1772861376_v1gdr7y7.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/categorias/c01.webp'
+
+FAILED: images/categorias/c01.webp
+--- Output for images/categorias/c02.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: 3c0fa6ed3e75d6c292c9e8cf42edd3d8. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = success
+Downloading image from https://tempfile.aiquickdraw.com/r/3c0fa6ed3e75d6c292c9e8cf42edd3d8_1772861375_zia2vqj3.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/categorias/c02.webp'
+
+FAILED: images/categorias/c02.webp
+--- Output for images/categorias/c03.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: 1f8bd5b359e0dfecf94c529fd2e401ac. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = success
+Downloading image from https://tempfile.aiquickdraw.com/r/1f8bd5b359e0dfecf94c529fd2e401ac_1772861375_sxyhfndo.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/categorias/c03.webp'
+
+FAILED: images/categorias/c03.webp
+--- Output for images/categorias/c04.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: 811a52cd3ab2f101037860cc60cccb0b. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = waiting
+Poll 7: state = success
+Downloading image from https://tempfile.aiquickdraw.com/r/811a52cd3ab2f101037860cc60cccb0b_1772861377_6dps7a2r.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/categorias/c04.webp'
+
+FAILED: images/categorias/c04.webp
+--- Output for images/categorias/c05.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: 4f6ca38e3de16d54e735255ff7e5e297. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = success
+Downloading image from https://tempfile.aiquickdraw.com/r/4f6ca38e3de16d54e735255ff7e5e297_1772861374_nkxpfcdn.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/categorias/c05.webp'
+
+FAILED: images/categorias/c05.webp
+--- Output for images/categorias/c06.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: c80899d3de4a972263b7436544ae3829. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = success
+Downloading image from https://tempfile.aiquickdraw.com/r/c80899d3de4a972263b7436544ae3829_1772861375_0k7d3utx.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/categorias/c06.webp'
+
+FAILED: images/categorias/c06.webp
+--- Output for images/hero/h01.webp ---
+Creating task via Kie.ai API...
+Task created successfully. Task ID: ecd9f5b9f45be4220071732b92918bf0. Polling...
+Poll 1: state = waiting
+Poll 2: state = waiting
+Poll 3: state = waiting
+Poll 4: state = waiting
+Poll 5: state = waiting
+Poll 6: state = waiting
+Poll 7: state = success
+Downloading image from https://tempfile.aiquickdraw.com/images/1772861380434-vuj5migocw.png
+ERROR downloading image: [Errno 2] No such file or directory: 'images/hero/h01.webp'
+
+FAILED: images/hero/h01.webp
