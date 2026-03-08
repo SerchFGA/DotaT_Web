@@ -1206,10 +1206,12 @@ p {
     overflow-y: auto;
     box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.15);
     border: none;
+    display: none;
   }
 
   .catalog-sidebar.mobile-open {
     transform: translateY(0);
+    display: block;
   }
 
   /* --- Bottom Sheet Handle --- */
@@ -1291,7 +1293,16 @@ p {
   }
 
   .product-card__img {
-    height: 120px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 100px;
+    max-height: 160px;
+  }
+
+  .product-card__img-wrap {
+    min-height: 140px;
+    padding: var(--space-3);
   }
 
   /* Hide FAB when filter panel is open */
@@ -1414,6 +1425,15 @@ p {
   .two-col {
     grid-template-columns: 1fr;
   }
+
+  /* On mobile, always show text first, image second — regardless of DOM order */
+  .two-col .image-wrapper {
+    order: 2;
+  }
+
+  .two-col>div:not(.image-wrapper) {
+    order: 1;
+  }
 }
 
 /* --- Values Grid --- */
@@ -1463,11 +1483,14 @@ p {
   box-shadow: -8px 0 40px rgba(0, 0, 0, 0.15);
   overflow-y: auto;
   transform: translateX(100%);
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0.35s;
+  visibility: hidden;
 }
 
 .drawer.active {
   transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 0s;
 }
 
 .drawer__header {
