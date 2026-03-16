@@ -1,10 +1,17 @@
 /* ============================================
    DotaT B2B — Form & Quote Table Engine
+   Supabase + FormSubmit Integration
    ============================================ */
 
 let productOptions = [];
+let supabaseClient = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Initialize Supabase client
+    if (typeof supabase !== 'undefined') {
+        supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+
     // Load product list for the selector
     try {
         const res = await fetch('data/catalogo.json');
@@ -86,7 +93,7 @@ function removeRow(id) {
     }
 }
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
 
@@ -138,10 +145,75 @@ function handleSubmit(e) {
         notas: form.notas.value
     };
 
-    console.log('📋 Cotización enviada:', formData);
+    // UI: disable button
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerText;
+    submitBtn.innerText = 'Enviando...';
+    submitBtn.disabled = true;
 
-    // Show success
-    form.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    try {
+        // Run both in parallel: Supabase insert + FormSubmit email
+        const tasks = [];
+
+        // --- TASK 1: Save to Supabase ---
+        if (supabaseClient) {
+            tasks.push(
+                supabaseClient
+                    .from('cotizaciones')
+                    .insert({
+                        nombre: formData.nombre,
+                        empresa: formData.empresa,
+                        nit: formData.nit,
+                        correo: formData.correo,
+                        telefono: formData.telefono,
+                        departamento: formData.departamento,
+                        ciudad: formData.ciudad,
+                        volumen: formData.volumen,
+                        productos: formData.productos,
+                        categorias: formData.categorias,
+                        notas: formData.notas
+                    })
+                    .then(({ error }) => {
+                        if (error) throw new Error('Supabase: ' + error.message);
+                        console.log('✅ Cotización guardada en Supabase');
+                    })
+            );
+        }
+
+        // --- TASK 2: Send professional email via Edge Function (Resend) ---
+        const edgeFunctionUrl = SUPABASE_URL + '/functions/v1/enviar-cotizacion';
+        tasks.push(
+            fetch(edgeFunctionUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + SUPABASE_ANON_KEY
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('✅ Email profesional enviado a ventas@dotat.com.co');
+                } else {
+                    throw new Error('Email: ' + (data.error || 'Error desconocido'));
+                }
+            })
+        );
+
+        // Wait for both to complete
+        await Promise.all(tasks);
+
+        // Show success
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    } catch (error) {
+        console.error('Error al enviar cotización:', error);
+        alert('Hubo un problema enviando tu solicitud. Por favor intenta de nuevo o contáctanos por WhatsApp.');
+    } finally {
+        submitBtn.innerText = originalBtnText;
+        submitBtn.disabled = false;
+    }
 }
