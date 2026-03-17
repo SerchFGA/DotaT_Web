@@ -101,6 +101,10 @@ async function handleSubmit(e) {
     const required = form.querySelectorAll('[required]');
     let valid = true;
     required.forEach(input => {
+        if (input.type === 'checkbox') {
+            // Checkboxes handled separately below
+            return;
+        }
         if (!input.value.trim()) {
             input.style.borderColor = '#ef4444';
             valid = false;
@@ -113,6 +117,19 @@ async function handleSubmit(e) {
         alert('Por favor completa todos los campos obligatorios.');
         return;
     }
+
+    // Privacy consent validation
+    const privacyCheckbox = document.getElementById('privacy-consent-checkbox');
+    const privacyWrapper = document.getElementById('privacy-consent-wrapper');
+    const privacyError = document.getElementById('privacy-error-msg');
+    if (privacyCheckbox && !privacyCheckbox.checked) {
+        privacyWrapper.classList.add('has-error');
+        privacyError.style.display = 'block';
+        privacyWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+    }
+    if (privacyWrapper) privacyWrapper.classList.remove('has-error');
+    if (privacyError) privacyError.style.display = 'none';
 
     // Collect product rows
     const products = [];
@@ -215,5 +232,54 @@ async function handleSubmit(e) {
     } finally {
         submitBtn.innerText = originalBtnText;
         submitBtn.disabled = false;
+    }
+}
+
+/* ============================================
+   Privacy Modal Controls
+   ============================================ */
+
+function openPrivacyModal(e) {
+    if (e) e.preventDefault();
+    const modal = document.getElementById('privacy-modal');
+    if (!modal) return;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    // Close on Escape key
+    document.addEventListener('keydown', handleEscapeKey);
+    // Close on backdrop click
+    modal.addEventListener('click', handleBackdropClick);
+}
+
+function closePrivacyModal() {
+    const modal = document.getElementById('privacy-modal');
+    if (!modal) return;
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', handleEscapeKey);
+    modal.removeEventListener('click', handleBackdropClick);
+}
+
+function acceptPrivacyAndClose() {
+    const checkbox = document.getElementById('privacy-consent-checkbox');
+    if (checkbox) {
+        checkbox.checked = true;
+        // Clear the error state once accepted
+        const wrapper = document.getElementById('privacy-consent-wrapper');
+        const errorMsg = document.getElementById('privacy-error-msg');
+        if (wrapper) wrapper.classList.remove('has-error');
+        if (errorMsg) errorMsg.style.display = 'none';
+    }
+    closePrivacyModal();
+}
+
+function handleEscapeKey(e) {
+    if (e.key === 'Escape') closePrivacyModal();
+}
+
+function handleBackdropClick(e) {
+    // Close only if clicking the dark overlay itself, not the dialog
+    if (e.target === document.getElementById('privacy-modal')) {
+        closePrivacyModal();
     }
 }

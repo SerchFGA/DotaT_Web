@@ -200,13 +200,28 @@
                         placeholder="¿Algo más que debamos saber? Frecuencia de compra, requisitos especiales, etc."></textarea>
                 </div>
 
+                <!-- Privacy Consent -->
+                <div class="privacy-consent" id="privacy-consent-wrapper">
+                    <label class="privacy-consent__label" for="privacy-consent-checkbox">
+                        <input type="checkbox" id="privacy-consent-checkbox" name="privacy_consent" required>
+                        <span>He leído y autorizo el tratamiento de mis datos personales conforme a la
+                            <a href="#" class="privacy-consent__link" id="open-privacy-modal" onclick="openPrivacyModal(event)">Política de Tratamiento de Datos Personales</a>
+                            de DotaT. <span class="required-star">*</span>
+                        </span>
+                    </label>
+                    <p class="privacy-error-msg" id="privacy-error-msg" style="display:none;">
+                        ⚠️ Debes aceptar la Política de Tratamiento de Datos para continuar.
+                    </p>
+                </div>
+
                 <!-- Submit -->
                 <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">
                     Enviar Solicitud de Cotización
                 </button>
                 <p
                     style="text-align:center;font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-3);">
-                    Te contactaremos en menos de 24 horas hábiles.</p>
+                    Al enviar, autorizo a Juan Carlos Brito Ortega, NIT 72.251.500 (DotaT) a tratar mis datos para gestionar mi cotización y fines comerciales, incluyendo contacto vía WhatsApp y redes sociales. · Te contactaremos en menos de 24 horas hábiles.
+                </p>
             </form>
 
             <!-- Success Message (hidden by default) -->
@@ -311,6 +326,93 @@
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg></a>
+
+    <!-- Privacy Policy Modal -->
+    <div class="privacy-modal" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title" style="display:none;">
+        <div class="privacy-modal__dialog">
+            <div class="privacy-modal__header">
+                <h3 id="privacy-modal-title">🔐 Política de Tratamiento de Datos Personales</h3>
+                <button class="privacy-modal__close" onclick="closePrivacyModal()" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="privacy-modal__body">
+                <p class="privacy-modal__updated">Juan Carlos Brito Ortega (DotaT) · Última actualización: 23-02-2026</p>
+
+                <h4>1. Identificación del Responsable</h4>
+                <p>El responsable del tratamiento de los datos personales es:<br>
+                <strong>Nombre:</strong> Juan Carlos Brito Ortega<br>
+                <strong>NIT:</strong> 72.251.500<br>
+                <strong>Nombre comercial:</strong> DotaT<br>
+                <strong>Domicilio:</strong> Barranquilla – Colombia<br>
+                <strong>Correo:</strong> notificacionesjudiciales@dotat.com.co<br>
+                <strong>Teléfono:</strong> 3168208333</p>
+
+                <h4>2. Marco Normativo</h4>
+                <p>La presente política se adopta en cumplimiento de la <strong>Ley 1581 de 2012</strong>, el <strong>Decreto 1377 de 2013</strong> y demás normas concordantes sobre protección de datos personales en Colombia.</p>
+
+                <h4>3. Datos Recolectados</h4>
+                <p>DotaT podrá recolectar, almacenar y tratar los siguientes datos:</p>
+                <ul>
+                    <li>Nombre y apellidos</li>
+                    <li>Número de identificación</li>
+                    <li>Teléfono fijo y móvil</li>
+                    <li>Correo electrónico</li>
+                    <li>Dirección</li>
+                    <li>Información comercial y financiera relacionada con cotizaciones</li>
+                    <li>Información contenida en formularios web</li>
+                </ul>
+                <p>No se recolectarán datos sensibles salvo que sea estrictamente necesario y con autorización expresa.</p>
+
+                <h4>4. Finalidades del Tratamiento</h4>
+                <p>Los datos personales serán utilizados para:</p>
+                <ul>
+                    <li>Gestionar solicitudes de cotización y procesos comerciales.</li>
+                    <li>Contactar clientes para envío de propuestas, seguimiento y cierre de negocios.</li>
+                    <li>Enviar información comercial, promociones y novedades.</li>
+                    <li>Realizar contacto mediante llamadas, correo electrónico, WhatsApp comercial y redes sociales.</li>
+                    <li>Ejecutar obligaciones contractuales.</li>
+                    <li>Cumplir obligaciones contables, tributarias y legales.</li>
+                    <li>Mantener registros internos administrativos y comerciales.</li>
+                    <li>Gestionar campañas de publicidad digital y análisis de comportamiento comercial.</li>
+                </ul>
+
+                <h4>5. Autorización</h4>
+                <p>El tratamiento de datos se realizará previa autorización libre, expresa e informada del titular, obtenida mediante formularios electrónicos con casillas de aceptación en la página web. DotaT conservará prueba de dicha autorización.</p>
+
+                <h4>6. Transferencia y Transmisión de Datos</h4>
+                <p>DotaT podrá transmitir o transferir datos personales a terceros encargados del tratamiento, dentro o fuera del territorio colombiano, cuando sea necesario para el desarrollo de sus actividades comerciales. Esto incluye proveedores tecnológicos, servicios de almacenamiento en la nube, plataformas de mensajería, CRM, herramientas de marketing digital y redes sociales. En caso de transferencia internacional, DotaT garantizará que el tercero cumpla estándares adecuados de protección de datos conforme a la normativa colombiana.</p>
+
+                <h4>7. Derechos del Titular</h4>
+                <p>El titular tiene derecho a:</p>
+                <ul>
+                    <li>Conocer, actualizar y rectificar sus datos.</li>
+                    <li>Solicitar prueba de autorización.</li>
+                    <li>Ser informado sobre el uso de sus datos.</li>
+                    <li>Presentar quejas ante la Superintendencia de Industria y Comercio.</li>
+                    <li>Revocar la autorización.</li>
+                    <li>Solicitar la supresión del dato cuando sea procedente.</li>
+                    <li>Acceder gratuitamente a sus datos personales.</li>
+                </ul>
+
+                <h4>8. Procedimiento para Consultas y Reclamos</h4>
+                <p>Las solicitudes podrán enviarse a:<br>
+                📧 <a href="mailto:servicioalcliente@dotat.com.co">servicioalcliente@dotat.com.co</a></p>
+                <ul>
+                    <li><strong>Consultas:</strong> Se responderán en un término máximo de diez (10) días hábiles.</li>
+                    <li><strong>Reclamos:</strong> Se atenderán en un término máximo de quince (15) días hábiles.</li>
+                </ul>
+
+                <h4>9. Medidas de Seguridad</h4>
+                <p>DotaT implementa medidas técnicas, humanas y administrativas razonables para proteger los datos personales contra pérdida, acceso no autorizado, alteración o uso fraudulento.</p>
+
+                <h4>10. Vigencia y Conservación</h4>
+                <p>Los datos personales serán conservados mientras sean necesarios para cumplir las finalidades descritas o mientras exista obligación legal de conservarlos. La presente política rige a partir de su publicación.</p>
+            </div>
+            <div class="privacy-modal__footer">
+                <button class="btn btn--primary" onclick="acceptPrivacyAndClose()">✅ He leído y acepto la política</button>
+                <button class="btn btn--outline" onclick="closePrivacyModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
