@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X34ZD1N8FV"></script>
     <script>
@@ -11,9 +12,8 @@
 
       gtag('config', 'G-X34ZD1N8FV');
     </script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/logo/L-05_favicon.png" type="image/png">
+    <link rel="icon" href="assets/images/logo/L-05_favicon_192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="assets/images/logo/L-05_favicon.png">
     <title>Solicitar Cotización — DotaT | Suministros Institucionales Colombia</title>
     <meta name="description"
@@ -133,8 +133,14 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Ciudad / Dirección de entrega <span>*</span></label>
-                        <input type="text" class="form-input" name="ciudad" required placeholder="Ciudad y dirección">
+                        <label class="form-label">Ciudad <span>*</span></label>
+                        <select class="form-select" name="ciudad" required disabled>
+                            <option value="">Primero selecciona un departamento...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Dirección de entrega <span>*</span></label>
+                        <input type="text" class="form-input" name="direccion" required placeholder="Ej: Cra 45 #26-85, Bodega 3">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Volumen estimado</label>

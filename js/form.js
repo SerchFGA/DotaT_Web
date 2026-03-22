@@ -5,6 +5,7 @@
 
 let productOptions = [];
 let supabaseClient = null;
+let ciudadesPorDepartamento = {};
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Initialize Supabase client
@@ -31,6 +32,41 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     } catch (e) {
         console.error('Error loading products:', e);
+    }
+
+    // Load cities per department
+    try {
+        const resCiudades = await fetch('data/ciudades.json');
+        ciudadesPorDepartamento = await resCiudades.json();
+    } catch (e) {
+        console.error('Error loading cities:', e);
+    }
+
+    // Dependent dropdown: Departamento → Ciudad
+    const deptoSelect = document.querySelector('select[name="departamento"]');
+    const ciudadSelect = document.querySelector('select[name="ciudad"]');
+    if (deptoSelect && ciudadSelect) {
+        deptoSelect.addEventListener('change', () => {
+            const depto = deptoSelect.value;
+            ciudadSelect.innerHTML = '<option value="">Seleccionar ciudad...</option>';
+
+            if (depto && ciudadesPorDepartamento[depto]) {
+                ciudadesPorDepartamento[depto].forEach(ciudad => {
+                    const opt = document.createElement('option');
+                    opt.textContent = ciudad;
+                    opt.value = ciudad;
+                    ciudadSelect.appendChild(opt);
+                });
+                // Add "Otra" option at the end
+                const otraOpt = document.createElement('option');
+                otraOpt.textContent = 'Otra';
+                otraOpt.value = 'Otra';
+                ciudadSelect.appendChild(otraOpt);
+                ciudadSelect.disabled = false;
+            } else {
+                ciudadSelect.disabled = true;
+            }
+        });
     }
 
     // Check URL params for pre-selected product
@@ -155,7 +191,7 @@ async function handleSubmit(e) {
         correo: form.correo.value,
         telefono: form.telefono.value,
         departamento: form.departamento.value,
-        ciudad: form.ciudad.value,
+        ciudad: form.ciudad.value + ' — ' + form.direccion.value,
         volumen: form.volumen.value,
         productos: products,
         categorias: [...form.querySelectorAll('input[name="categorias"]:checked')].map(cb => cb.value),

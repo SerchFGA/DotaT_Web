@@ -1,0 +1,192 @@
+{
+  "Amazonas": [
+    "Leticia",
+    "Puerto Nariño"
+  ],
+  "Antioquia": [
+    "Apartadó",
+    "Bello",
+    "Caldas",
+    "Caucasia",
+    "Chigorodó",
+    "Copacabana",
+    "Envigado",
+    "Girardota",
+    "Itagüí",
+    "La Ceja",
+    "La Estrella",
+    "Marinilla",
+    "Medellín",
+    "Rionegro",
+    "Sabaneta",
+    "Santa Fe de Antioquia",
+    "Turbo",
+    "Yarumal"
+  ],
+  "Arauca": [
+    "Arauca",
+    "Saravena",
+    "Tame"
+  ],
+  "Atlántico": [
+    "Barranquilla",
+    "Galapa",
+    "Malambo",
+    "Puerto Colombia",
+    "Sabanalarga",
+    "Santo Tomás",
+    "Soledad"
+  ],
+  "Bolívar": [
+    "Arjona",
+    "Cartagena de Indias",
+    "El Carmen de Bolívar",
+    "Magangué",
+    "San Juan Nepomuceno",
+    "Turbaco"
+  ],
+  "Boyacá": [
+    "Chiquinquirá",
+    "Duitama",
+    "Paipa",
+    "Sogamoso",
+    "Tunja",
+    "Villa de Leyva"
+  ],
+  "Caldas": [
+    "Chinchiná",
+    "La Dorada",
+    "Manizales",
+    "Villamaría"
+  ],
+  "Caquetá": [
+    "Florencia",
+    "San Vicente del Caguán"
+  ],
+  "Casanare": [
+    "Aguazul",
+    "Villanueva",
+    "Yopal"
+  ],
+  "Cauca": [
+    "Popayán",
+    "Puerto Tejada",
+    "Santander de Quilichao"
+  ],
+  "Cesar": [
+    "Aguachica",
+    "Valledupar"
+  ],
+  "Chocó": [
+    "Istmina",
+    "Quibdó"
+  ],
+  "Córdoba": [
+    "Cereté",
+    "Lorica",
+    "Montería",
+    "Planeta Rica",
+    "Sahagún"
+  ],
+  "Cundinamarca": [
+    "Bogotá D.C.",
+    "Cajicá",
+    "Chía",
+    "Facatativá",
+    "Funza",
+    "Fusagasugá",
+    "Girardot",
+    "Madrid",
+    "Mosquera",
+    "Soacha",
+    "Zipaquirá"
+  ],
+  "Guainía": [
+    "Inírida"
+  ],
+  "Guaviare": [
+    "San José del Guaviare"
+  ],
+  "Huila": [
+    "Garzón",
+    "Neiva",
+    "Pitalito"
+  ],
+  "La Guajira": [
+    "Maicao",
+    "Riohacha",
+    "Uribia"
+  ],
+  "Magdalena": [
+    "Ciénaga",
+    "Fundación",
+    "Santa Marta"
+  ],
+  "Meta": [
+    "Acacías",
+    "Granada",
+    "Villavicencio"
+  ],
+  "Nariño": [
+    "Ipiales",
+    "Pasto",
+    "Tumaco"
+  ],
+  "Norte de Santander": [
+    "Cúcuta",
+    "Los Patios",
+    "Ocaña",
+    "Villa del Rosario"
+  ],
+  "Putumayo": [
+    "Mocoa",
+    "Puerto Asís"
+  ],
+  "Quindío": [
+    "Armenia",
+    "Calarcá",
+    "La Tebaida"
+  ],
+  "Risaralda": [
+    "Dosquebradas",
+    "Pereira",
+    "Santa Rosa de Cabal"
+  ],
+  "San Andrés y Providencia": [
+    "Providencia",
+    "San Andrés"
+  ],
+  "Santander": [
+    "Barrancabermeja",
+    "Bucaramanga",
+    "Floridablanca",
+    "Girón",
+    "Piedecuesta",
+    "San Gil"
+  ],
+  "Sucre": [
+    "Corozal",
+    "Sincelejo"
+  ],
+  "Tolima": [
+    "Espinal",
+    "Ibagué",
+    "Melgar"
+  ],
+  "Valle del Cauca": [
+    "Buenaventura",
+    "Buga",
+    "Cali",
+    "Cartago",
+    "Jamundí",
+    "Palmira",
+    "Tuluá",
+    "Yumbo"
+  ],
+  "Vaupés": [
+    "Mitú"
+  ],
+  "Vichada": [
+    "Puerto Carreño"
+  ]
+}

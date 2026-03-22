@@ -867,6 +867,12 @@ p {
   box-shadow: 0 0 0 3px rgba(24, 201, 149, 0.15);
 }
 
+.form-select:disabled {
+  background-color: var(--color-surface);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
 .form-textarea {
   resize: vertical;
   min-height: 100px;
