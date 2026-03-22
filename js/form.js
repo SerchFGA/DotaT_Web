@@ -205,60 +205,66 @@ async function handleSubmit(e) {
     submitBtn.disabled = true;
 
     try {
-        // Run both in parallel: Supabase insert + FormSubmit email
-        const tasks = [];
+        let solicitudId = null;
+        let fechaSolicitud = null;
 
-        // --- TASK 1: Save to Supabase ---
+        // --- STEP 1: Save to Supabase and get the solicitation number ---
         if (supabaseClient) {
-            tasks.push(
-                supabaseClient
-                    .from('cotizaciones')
-                    .insert({
-                        nombre: formData.nombre,
-                        empresa: formData.empresa,
-                        nit: formData.nit,
-                        correo: formData.correo,
-                        telefono: formData.telefono,
-                        departamento: formData.departamento,
-                        ciudad: formData.ciudad,
-                        volumen: formData.volumen,
-                        productos: formData.productos,
-                        categorias: formData.categorias,
-                        notas: formData.notas
-                    })
-                    .then(({ error }) => {
-                        if (error) throw new Error('Supabase: ' + error.message);
-                        console.log('✅ Cotización guardada en Supabase');
-                    })
-            );
+            const { data, error } = await supabaseClient
+                .from('cotizaciones')
+                .insert({
+                    nombre: formData.nombre,
+                    empresa: formData.empresa,
+                    nit: formData.nit,
+                    correo: formData.correo,
+                    telefono: formData.telefono,
+                    departamento: formData.departamento,
+                    ciudad: formData.ciudad,
+                    volumen: formData.volumen,
+                    productos: formData.productos,
+                    categorias: formData.categorias,
+                    notas: formData.notas
+                })
+                .select('numero_solicitud, created_at')
+                .single();
+
+            if (error) throw new Error('Supabase: ' + error.message);
+
+            solicitudId = 'DOT-' + String(data.numero_solicitud).padStart(5, '0');
+            fechaSolicitud = new Date(data.created_at).toLocaleDateString('es-CO', {
+                year: 'numeric', month: 'long', day: 'numeric',
+                hour: '2-digit', minute: '2-digit'
+            });
+            console.log('✅ Cotización guardada en Supabase:', solicitudId);
         }
 
-        // --- TASK 2: Send professional email via Edge Function (Resend) ---
+        // --- STEP 2: Send professional email via Edge Function (Resend) ---
         const edgeFunctionUrl = SUPABASE_URL + '/functions/v1/enviar-cotizacion';
-        tasks.push(
-            fetch(edgeFunctionUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer ' + SUPABASE_ANON_KEY
-                },
-                body: JSON.stringify(formData)
+        const emailRes = await fetch(edgeFunctionUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + SUPABASE_ANON_KEY
+            },
+            body: JSON.stringify({
+                ...formData,
+                solicitudId: solicitudId,
+                fechaSolicitud: fechaSolicitud
             })
-            .then(res => res.json())
-            .then(data => {
-                if (data.success) {
-                    console.log('✅ Email profesional enviado a ventas@dotat.com.co');
-                } else {
-                    throw new Error('Email: ' + (data.error || 'Error desconocido'));
-                }
-            })
-        );
+        });
 
-        // Wait for both to complete
-        await Promise.all(tasks);
+        const emailData = await emailRes.json();
+        if (!emailData.success) {
+            throw new Error('Email: ' + (emailData.error || 'Error desconocido'));
+        }
+        console.log('✅ Email profesional enviado a ventas@dotat.com.co');
 
-        // Show success
+        // Show success with solicitation ID
         form.style.display = 'none';
+        const successMsg = document.getElementById('success-message');
+        if (solicitudId && successMsg) {
+            successMsg.innerHTML = 'Tu solicitud <strong>' + solicitudId + '</strong> ha sido registrada el ' + fechaSolicitud + '. Nuestro equipo comercial te contactará en menos de 24 horas con una propuesta personalizada.';
+        }
         document.getElementById('form-success').style.display = 'block';
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
