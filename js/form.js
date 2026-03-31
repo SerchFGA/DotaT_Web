@@ -211,22 +211,19 @@ async function handleSubmit(e) {
         // --- STEP 1: Save to Supabase and get the solicitation number ---
         if (supabaseClient) {
             const { data, error } = await supabaseClient
-                .from('cotizaciones')
-                .insert({
-                    nombre: formData.nombre,
-                    empresa: formData.empresa,
-                    nit: formData.nit,
-                    correo: formData.correo,
-                    telefono: formData.telefono,
-                    departamento: formData.departamento,
-                    ciudad: formData.ciudad,
-                    volumen: formData.volumen,
-                    productos: formData.productos,
-                    categorias: formData.categorias,
-                    notas: formData.notas
-                })
-                .select('numero_solicitud, created_at')
-                .single();
+                .rpc('insertar_cotizacion', {
+                    p_nombre: formData.nombre,
+                    p_empresa: formData.empresa,
+                    p_nit: formData.nit,
+                    p_correo: formData.correo,
+                    p_telefono: formData.telefono,
+                    p_departamento: formData.departamento,
+                    p_ciudad: formData.ciudad,
+                    p_volumen: formData.volumen,
+                    p_productos: formData.productos,
+                    p_categorias: formData.categorias,
+                    p_notas: formData.notas
+                });
 
             if (error) throw new Error('Supabase: ' + error.message);
 
