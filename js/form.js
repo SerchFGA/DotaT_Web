@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         codigo: p.codigo,
                         nombre: p.nombre,
                         categoria: cat.nombre,
+                        tipo_embalaje: p.tipo_embalaje || '',
+                        cantidad_embalaje: p.cantidad_embalaje || '',
                         label: `${p.codigo} — ${p.nombre}`
                     });
                 });
@@ -105,6 +107,7 @@ function addProductRow(preselectedCode) {
         <option value="">Seleccionar producto...</option>
         ${options}
       </select>
+      <span class="embalaje-hint" id="hint-${rowCount}"></span>
     </td>
     <td>
       <input type="number" class="form-input" name="cantidad_${rowCount}" min="1" value="1" required style="width:100%;">
@@ -115,6 +118,24 @@ function addProductRow(preselectedCode) {
   `;
 
     tbody.appendChild(tr);
+
+    // Show embalaje hint on product selection
+    const select = tr.querySelector('select');
+    const hint = tr.querySelector(`#hint-${rowCount}`);
+
+    const updateHint = () => {
+        const prod = productOptions.find(p => p.codigo === select.value);
+        if (prod && prod.tipo_embalaje) {
+            const qty = prod.cantidad_embalaje > 1 ? ` × ${prod.cantidad_embalaje}` : '';
+            hint.innerHTML = `📦 Se vende por <strong>${prod.tipo_embalaje}${qty}</strong>`;
+            hint.style.display = 'block';
+        } else {
+            hint.style.display = 'none';
+        }
+    };
+    select.addEventListener('change', updateHint);
+    // Show hint immediately if pre-selected
+    if (preselectedCode) updateHint();
 }
 
 function removeRow(id) {
@@ -178,7 +199,9 @@ async function handleSubmit(e) {
             products.push({
                 codigo: select.value,
                 nombre: prod ? prod.nombre : select.value,
-                cantidad: qty.value
+                cantidad: qty.value,
+                tipo_embalaje: prod ? prod.tipo_embalaje : '',
+                cantidad_embalaje: prod ? prod.cantidad_embalaje : ''
             });
         }
     }

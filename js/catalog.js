@@ -132,6 +132,7 @@ function renderProducts(products) {
           <h4 class="product-card__name" style="cursor:pointer;" onclick="openDrawer('${p.codigo}')">${p.nombre}</h4>
           <p class="product-card__code">Cód. ${p.codigo} · ${p.presentacion || ''}</p>
           ${specs.length > 0 ? `<p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.25rem 0 0;">${specs.join(' · ')}</p>` : ''}
+          ${p.tipo_embalaje ? `<span class="product-card__embalaje">📦 ${p.tipo_embalaje}${p.cantidad_embalaje > 1 ? ' × ' + p.cantidad_embalaje : ''}</span>` : ''}
         </div>
         <div class="product-card__footer">
           <a href="contacto.html?producto=${p.codigo}" class="btn btn--primary" style="flex:1;">Cotizar</a>
@@ -226,6 +227,7 @@ function openDrawer(codigo) {
     if (product.capas) specRows.push(['Capas', `${product.capas} capa${product.capas > 1 ? 's' : ''}`]);
     if (product.color) specRows.push(['Color', product.color]);
     if (product.presentacion) specRows.push(['Presentación', product.presentacion]);
+    if (product.tipo_embalaje) specRows.push(['Embalaje', `📦 ${product.tipo_embalaje}${product.cantidad_embalaje > 1 ? ' × ' + product.cantidad_embalaje : ''}`]);
     if (product.sistema) specRows.push(['Sistema', product.sistema]);
     if (product.categoria) specRows.push(['Categoría', product.categoria]);
     if (product.fsc) specRows.push(['Certificación', '<span class="fsc-badge">🌿 FSC Certificado</span>']);

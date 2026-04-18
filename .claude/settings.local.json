@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l *.html js/*.js css/*.css data/*.json)",
+      "Bash(node -e \":*)",
+      "Bash(git -C \"c:\\\\Users\\\\sergi\\\\Documents\\\\Antigravit_Projects\\\\DotaT Web Page Proj\" show ad393a8 --stat)",
+      "Bash(git -C \"c:\\\\Users\\\\sergi\\\\Documents\\\\Antigravit_Projects\\\\DotaT Web Page Proj\" log --all --grep=\"Resend\\\\|email\\\\|PDF\" --oneline)",
+      "mcp__supabase__execute_sql",
+      "Bash(curl -s -X POST \"https://tfttgswgstcbwooffdzf.supabase.co/rest/v1/cotizaciones\" -H \"apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRmdHRnc3dnc3RjYndvb2ZmZHpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTY0NTQsImV4cCI6MjA4OTI3MjQ1NH0.n4cj-oKdnMAgioksKXPpITZKRCg3ila3uczB_uSZpek\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRmdHRnc3dnc3RjYndvb2ZmZHpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2OTY0NTQsImV4cCI6MjA4OTI3MjQ1NH0.n4cj-oKdnMAgioksKXPpITZKRCg3ila3uczB_uSZpek\" -H \"Content-Type: application/json\" -H \"Prefer: return=representation\" -d '{:*)",
+      "Bash(curl --version)",
+      "Bash(python -c \"import urllib.request; print\\(''''python ok''''\\)\")",
+      "Bash(python -c \":*)"
+    ]
+  }
+}
