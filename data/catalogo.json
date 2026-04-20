@@ -1,761 +1,736 @@
 {
-    "marcas": [
+  "marcas": [
+    {
+      "id": "tork",
+      "nombre": "Tork",
+      "logo": "assets/logo/tork-logo.png",
+      "categorias": [
         {
-            "id": "tork",
-            "nombre": "Tork",
-            "logo": "assets/logo/tork-logo.png",
-            "categorias": [
-                {
-                    "id": "higienicos-convencionales",
-                    "nombre": "Higiénicos Convencionales",
-                    "icono": "🧻",
-                    "productos": [
-                        {
-                            "codigo": "201763",
-                            "nombre": "Tork® Papel Higiénico Bajo Metraje",
-                            "calidad": "Advanced",
-                            "tamano": "35m x 13.5cm",
-                            "capas": 3,
-                            "presentacion": "23 rollos por caja",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/201763.jpg",
-                            "descripcion": "El Papel Higiénico Convencional se destaca por su rendimiento confiable y su compromiso con la higiene. Presenta canales en espiral que mejoran la absorción, asegurando una sensación de limpieza y frescura. Además, su empaque individual protege el producto hasta su uso, manteniendo su integridad.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        },
-                        {
-                            "codigo": "201764",
-                            "nombre": "Tork® Papel Higiénico Bajo Metraje",
-                            "calidad": "Advanced",
-                            "tamano": "22m x 11.2cm",
-                            "capas": 3,
-                            "presentacion": "24 rollos por caja",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/201764.jpg",
-                            "descripcion": "El Papel Higiénico Convencional se destaca por su rendimiento confiable y su compromiso con la higiene. Presenta canales en espiral que mejoran la absorción, asegurando una sensación de limpieza y frescura. Además, su empaque individual protege el producto hasta su uso, manteniendo su integridad.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        }
-                    ]
-                },
-                {
-                    "id": "higienicos-jumbo",
-                    "nombre": "Higiénicos Jumbo y SmartOne®",
-                    "icono": "🧻",
-                    "productos": [
-                        {
-                            "codigo": "71198",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Premium",
-                            "tamano": "160m x 9.5cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/71198.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "202580",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Advanced",
-                            "tamano": "400m x 18.2cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/202580.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso. Disponible en diferentes metrajes, se adapta a diversas necesidades de uso.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "71107",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Advanced",
-                            "tamano": "400m x 18.2cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/71107.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso. Disponible en diferentes metrajes, se adapta a diversas necesidades de uso.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "71457",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Advanced",
-                            "tamano": "250m x 18.2cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/71457.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso. Disponible en diferentes metrajes, se adapta a diversas necesidades de uso.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "202581",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Premium",
-                            "tamano": "160m x 9.5cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/202581.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "71187",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Premium",
-                            "tamano": "160m x 9.5cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/71187.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "71357",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Universal",
-                            "tamano": "400m x 18.2cm",
-                            "capas": 1,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "T2",
-                            "fsc": true,
-                            "imagen": "assets/productos/71357.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo Universal es una opción económica que ofrece un rendimiento confiable para instituciones con alto tráfico. Su diseño optimizado reduce el consumo y el desperdicio, manteniendo estándares de higiene.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "200868",
-                            "nombre": "Tork® Higiénico Jumbo",
-                            "calidad": "Premium",
-                            "tamano": "160m x 9.5cm",
-                            "capas": 2,
-                            "presentacion": "12 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "T2",
-                            "fsc": false,
-                            "imagen": "assets/productos/200868.jpg",
-                            "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 12
-                        },
-                        {
-                            "codigo": "71613",
-                            "nombre": "Tork SmartOne® Papel Higiénico",
-                            "calidad": "Advanced",
-                            "tamano": "27 x 20 x 40cm",
-                            "metrosTotal": 200,
-                            "capas": 2,
-                            "presentacion": "4 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "T8",
-                            "fsc": true,
-                            "imagen": "assets/productos/71613.jpg",
-                            "descripcion": "Tork SmartOne® Papel Higiénico está diseñado para ofrecer un rendimiento superior y características sostenibles. Con capacidad para abastecer un 40% más de usuarios, su sistema de dispensado 1 a 1 controla el consumo y reduce los costos ocultos. Cada hoja proporciona una mayor área de uso, garantizando una experiencia más cómoda para el usuario.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "71612",
-                            "nombre": "Tork SmartOne® Mini Papel Higiénico",
-                            "calidad": "Advanced",
-                            "tamano": "27 x 14 x 15cm",
-                            "metrosTotal": 100,
-                            "capas": 2,
-                            "presentacion": "6 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "T8",
-                            "fsc": true,
-                            "imagen": "assets/productos/71612.jpg",
-                            "descripcion": "Tork SmartOne® Mini Papel Higiénico está diseñado para ofrecer un rendimiento superior y características sostenibles. Su sistema de dispensado 1 a 1 controla el consumo y reduce los costos ocultos. Fácil de instalar y surtir, se adapta a múltiples espacios con facilidad.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 12
-                        }
-                    ]
-                },
-                {
-                    "id": "toallas-flujo-central",
-                    "nombre": "Toallas de Manos Flujo Central",
-                    "icono": "🤲",
-                    "productos": [
-                        {
-                            "codigo": "73689",
-                            "nombre": "Tork® Toalla de Manos Flujo Central",
-                            "calidad": "Premium",
-                            "tamano": "54.6 x 36.4 x 19.6cm",
-                            "metrosTotal": 100,
-                            "capas": 3,
-                            "presentacion": "6 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "M5",
-                            "fsc": true,
-                            "imagen": "assets/productos/73689.jpg",
-                            "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "73748",
-                            "nombre": "Tork® Toalla de Manos Flujo Central",
-                            "calidad": "Advanced",
-                            "tamano": "19.6 x 54 x 36cm",
-                            "metrosTotal": 120,
-                            "capas": 2,
-                            "presentacion": "6 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "M5",
-                            "fsc": true,
-                            "imagen": "assets/productos/73748.jpg",
-                            "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "73686",
-                            "nombre": "Tork® Toalla de Manos Flujo Central",
-                            "calidad": "Premium",
-                            "tamano": "19.6 x 18.2 x 18.2cm",
-                            "metrosTotal": 100,
-                            "capas": 3,
-                            "presentacion": "6 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "M5",
-                            "fsc": false,
-                            "imagen": "assets/productos/73686.jpg",
-                            "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "73575",
-                            "nombre": "Tork® Toalla de Manos Flujo Central",
-                            "calidad": "Premium",
-                            "tamano": "19.6 x 50 x 35cm",
-                            "metrosTotal": 100,
-                            "capas": 3,
-                            "presentacion": "6 rollos por caja",
-                            "color": "Blanco",
-                            "sistema": "M5",
-                            "fsc": true,
-                            "imagen": "assets/productos/73575.jpg",
-                            "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 2
-                        }
-                    ]
-                },
-                {
-                    "id": "toallas-dobladas-z",
-                    "nombre": "Toallas de Manos Dobladas en Z",
-                    "icono": "🤲",
-                    "productos": [
-                        {
-                            "codigo": "200246",
-                            "nombre": "Tork Xpress® Toalla de Manos",
-                            "calidad": "Advanced",
-                            "tamano": "21.5 x 8.6cm",
-                            "hojas": 150,
-                            "capas": 2,
-                            "presentacion": "24 fajillas por caja",
-                            "color": "Blanco",
-                            "sistema": "H2",
-                            "fsc": true,
-                            "imagen": "assets/productos/200246.jpg",
-                            "descripcion": "La Toalla de Manos Doblada en Z Tork Xpress® ofrece una solución integral con sistemas sin cuchillas ni mecanismos que aseguran un uso seguro. Su dispensado 1 a 1 controla eficientemente el consumo, mientras que su hoja doble con embossing brindan una buena absorción y resistencia.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        },
-                        {
-                            "codigo": "73554",
-                            "nombre": "Tork Xpress® Toalla de Manos",
-                            "calidad": "Premium",
-                            "tamano": "21.5 x 8.6cm",
-                            "hojas": 150,
-                            "capas": 3,
-                            "presentacion": "24 fajillas por caja",
-                            "color": "Natural",
-                            "sistema": "H2",
-                            "fsc": true,
-                            "imagen": "assets/productos/73554.jpg",
-                            "descripcion": "La Toalla de Manos Doblada en Z Tork Xpress® ofrece una solución integral con sistemas sin cuchillas ni mecanismos que aseguran un uso seguro. Su dispensado 1 a 1 controla eficientemente el consumo, mientras que su hoja doble con embossing brindan una buena absorción y resistencia.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        },
-                        {
-                            "codigo": "73553",
-                            "nombre": "Tork Xpress® Toalla de Manos",
-                            "calidad": "Advanced",
-                            "tamano": "21.5 x 8.6cm",
-                            "hojas": 150,
-                            "capas": 2,
-                            "presentacion": "24 fajillas por caja",
-                            "color": "Natural",
-                            "sistema": "H2",
-                            "fsc": false,
-                            "imagen": "assets/productos/73553.jpg",
-                            "descripcion": "La Toalla de Manos Doblada en Z Tork Xpress® ofrece una solución integral con sistemas sin cuchillas ni mecanismos que aseguran un uso seguro. Su dispensado 1 a 1 controla eficientemente el consumo, mientras que su hoja doble con embossing brindan una buena absorción y resistencia.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        }
-                    ]
-                },
-                {
-                    "id": "jabones",
-                    "nombre": "Jabones",
-                    "icono": "🧴",
-                    "productos": [
-                        {
-                            "codigo": "80506",
-                            "nombre": "Tork® Jabón Líquido Sistema",
-                            "calidad": "Premium",
-                            "dosis": 1000,
-                            "litros": "1L",
-                            "presentacion": "6 litros por caja",
-                            "color": "Perla",
-                            "sistema": "S1",
-                            "imagen": "assets/productos/80506.png",
-                            "descripcion": "Los jabones Tork® ofrecen soluciones de higiene de manos de alta calidad para entornos profesionales. Con fórmulas dermatológicamente probadas, proporcionan una limpieza eficaz y suavidad para la piel. Los dispensadores controlados permiten un dispensado preciso que reduce el desperdicio.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "80536",
-                            "nombre": "Tork® Jabón en Espuma para Manos",
-                            "calidad": "Premium",
-                            "dosis": 2500,
-                            "litros": "1L",
-                            "presentacion": "6 litros por caja",
-                            "sistema": "S4",
-                            "imagen": "assets/productos/80536.jpg",
-                            "descripcion": "Los jabones Tork® ofrecen soluciones de higiene de manos de alta calidad para entornos profesionales. Con fórmulas dermatológicamente probadas, proporcionan una limpieza eficaz y suavidad para la piel. Los dispensadores controlados permiten un dispensado preciso que reduce el desperdicio.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "80550",
-                            "nombre": "Tork® Jabón Líquido Fragancia Suave",
-                            "calidad": "Advanced",
-                            "dosis": 475,
-                            "litros": "475ml",
-                            "presentacion": "8 litros por caja",
-                            "color": "Perla",
-                            "sistema": "S2",
-                            "imagen": "assets/productos/80550.png",
-                            "descripcion": "Los jabones Tork® ofrecen soluciones de higiene de manos de alta calidad para entornos profesionales. Con fórmulas dermatológicamente probadas, proporcionan una limpieza eficaz y suavidad para la piel. Los dispensadores controlados permiten un dispensado preciso que reduce el desperdicio.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 8
-                        }
-                    ]
-                },
-                {
-                    "id": "panos-papel",
-                    "nombre": "Paños de Papel",
-                    "icono": "📄",
-                    "productos": [
-                        {
-                            "codigo": "74079",
-                            "nombre": "Tork® Limpión de Papel",
-                            "tamano": "22.8 x 47 x 23.5cm",
-                            "metrosTotal": 305,
-                            "presentacion": "2 rollos por caja",
-                            "color": "Natural",
-                            "sistema": "W1",
-                            "fsc": true,
-                            "imagen": "assets/productos/74079.jpg",
-                            "descripcion": "Los limpiones y paños de papel Tork® están diseñados para trabajos exigentes en entornos industriales y de servicio de alimentos. Ofrecen alta resistencia y absorción, adaptándose a diversas tareas de limpieza profesional.",
-                            "tipo_embalaje": "Paca",
-                            "cantidad_embalaje": 2
-                        },
-                        {
-                            "codigo": "74167",
-                            "nombre": "Tork® Limpión de Papel Trabajo Pesado",
-                            "tamano": "22.5 x 30.5 x 30.5cm",
-                            "metrosTotal": 400,
-                            "presentacion": "1 rollo por caja",
-                            "color": "Natural",
-                            "sistema": "W1",
-                            "fsc": true,
-                            "imagen": "assets/productos/74167.jpg",
-                            "descripcion": "Los limpiones y paños de papel Tork® están diseñados para trabajos exigentes en entornos industriales y de servicio de alimentos. Ofrecen alta resistencia y absorción, adaptándose a diversas tareas de limpieza profesional.",
-                            "tipo_embalaje": "Rollo",
-                            "cantidad_embalaje": 1
-                        },
-                        {
-                            "codigo": "203800",
-                            "nombre": "Tork Shopmax®",
-                            "tamano": "23.5 x 27.9cm",
-                            "metrosTotal": 14,
-                            "presentacion": "30 rollos por caja",
-                            "color": "Azul",
-                            "sistema": "W1",
-                            "fsc": true,
-                            "imagen": "assets/productos/203800.png",
-                            "descripcion": "Los limpiones y paños de papel Tork® están diseñados para trabajos exigentes en entornos industriales y de servicio de alimentos. Ofrecen alta resistencia y absorción, adaptándose a diversas tareas de limpieza profesional.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 30
-                        }
-                    ]
-                },
-                {
-                    "id": "panos-limpieza",
-                    "nombre": "Paños de Limpieza",
-                    "icono": "🧹",
-                    "productos": [
-                        {
-                            "codigo": "74312",
-                            "nombre": "Tork® Paño de Limpieza Resistente a los Olores",
-                            "tamano": "33 x 61cm",
-                            "presentacion": "10 paños x paquete, 2 paquetes por caja",
-                            "color": "Natural",
-                            "imagen": "assets/productos/74312.jpg",
-                            "descripcion": "Los paños de limpieza Tork® son reutilizables y resistentes a los olores, diseñados para múltiples tareas de limpieza. Su composición especial permite lavarlos y reutilizarlos hasta 150 veces sin perder eficacia.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 15
-                        },
-                        {
-                            "codigo": "203390",
-                            "nombre": "Tork® Paño de Limpieza Resistente",
-                            "tamano": "42 x 28cm",
-                            "presentacion": "100 paños x paquete, 6 paquetes por caja",
-                            "color": "Blanco",
-                            "imagen": "assets/productos/203390.jpg",
-                            "descripcion": "Los paños de limpieza Tork® son reutilizables y resistentes a los olores, diseñados para múltiples tareas de limpieza. Su composición especial permite lavarlos y reutilizarlos hasta 150 veces sin perder eficacia.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        }
-                    ]
-                },
-                {
-                    "id": "servilletas",
-                    "nombre": "Servilletas Xpressnap®",
-                    "icono": "🍽️",
-                    "productos": [
-                        {
-                            "codigo": "72609",
-                            "nombre": "Tork® Servilleta Cocktail",
-                            "calidad": "Universal",
-                            "tamano": "16.6 x 4.9cm",
-                            "capas": 2,
-                            "presentacion": "9 paquetes x 600 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/72609.jpg",
-                            "descripcion": "Las servilletas Tork® Cocktail ofrecen la calidad básica para satisfacer las necesidades de cualquier institución. Su empaque dispensador permite al usuario retirar una servilleta a la vez, manteniendo la higiene.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 9
-                        },
-                        {
-                            "codigo": "72611",
-                            "nombre": "Tork® Servilleta Cocktail",
-                            "calidad": "Universal",
-                            "tamano": "14.5 x 8.1cm",
-                            "capas": 1,
-                            "presentacion": "32 paquetes x 150 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/72611.jpg",
-                            "descripcion": "Las servilletas Tork® Cocktail ofrecen la calidad básica para satisfacer las necesidades de cualquier institución. Su empaque dispensador permite al usuario retirar una servilleta a la vez, manteniendo la higiene.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 32
-                        },
-                        {
-                            "codigo": "200639",
-                            "nombre": "Tork Plus® Cocktail",
-                            "calidad": "Universal",
-                            "tamano": "28.2 x 9cm",
-                            "capas": 1,
-                            "presentacion": "20 paquetes x 200 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/200639.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 20
-                        },
-                        {
-                            "codigo": "200690",
-                            "nombre": "Tork Plus® Cocktail",
-                            "calidad": "Universal",
-                            "tamano": "27.5 x 16.8cm",
-                            "capas": 1,
-                            "presentacion": "20 paquetes x 200 servilletas",
-                            "color": "Natural",
-                            "fsc": true,
-                            "imagen": "assets/productos/200690.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 20
-                        },
-                        {
-                            "codigo": "72145",
-                            "nombre": "Tork Plus® Servilleta Dispensada",
-                            "calidad": "Universal",
-                            "tamano": "35 x 8cm",
-                            "capas": 1,
-                            "presentacion": "9 paquetes x 550 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/72145.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 9
-                        },
-                        {
-                            "codigo": "72679",
-                            "nombre": "Tork Plus® Servilleta Dispensada",
-                            "calidad": "Advanced",
-                            "tamano": "9.6 x 13.5cm",
-                            "capas": 2,
-                            "presentacion": "36 paquetes x 150 servilletas",
-                            "color": "Natural",
-                            "fsc": true,
-                            "imagen": "assets/productos/72679.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 36
-                        },
-                        {
-                            "codigo": "72144",
-                            "nombre": "Tork Plus® Servilleta Dispensada",
-                            "calidad": "Universal",
-                            "tamano": "8.2 x 7.3cm",
-                            "capas": 1,
-                            "presentacion": "45 paquetes x 100 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/72144.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 45
-                        },
-                        {
-                            "codigo": "200115",
-                            "nombre": "Tork® Servilleta Acolchada Lunch",
-                            "calidad": "Advanced",
-                            "tamano": "16.6 x 4.9cm",
-                            "capas": 2,
-                            "presentacion": "24 paquetes x 100 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/200115.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        },
-                        {
-                            "codigo": "72506",
-                            "nombre": "Tork® Servilleta Dinner",
-                            "calidad": "Premium",
-                            "tamano": "16.6 x 4.9cm",
-                            "capas": 2,
-                            "presentacion": "24 paquetes x 50 servilletas",
-                            "color": "Blanco",
-                            "fsc": false,
-                            "imagen": "assets/productos/72506.jpg",
-                            "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 24
-                        },
-                        {
-                            "codigo": "202223",
-                            "nombre": "Tork Xpressnap® Classic Café",
-                            "calidad": "Advanced",
-                            "tamano": "10.8 x 10.8cm",
-                            "capas": 1,
-                            "presentacion": "12 paquetes x 500 servilletas",
-                            "color": "Blanco",
-                            "fsc": true,
-                            "imagen": "assets/productos/202223.jpg",
-                            "descripcion": "La Servilleta Dispensada Tork XpressNap® es la solución perfecta para entornos comerciales y públicos que buscan rendimiento, higiene y sostenibilidad. Con su sistema de dispensado 1 a 1, controla eficazmente el consumo, mientras ofrece hasta un 45% más de absorción que otras servilletas.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 12
-                        }
-                    ]
-                },
-                {
-                    "id": "dispensadores",
-                    "nombre": "Dispensadores",
-                    "icono": "🏗️",
-                    "productos": [
-                        {
-                            "codigo": "80131",
-                            "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
-                            "material": "ABS",
-                            "tamano": "275 x 345 x 132cm",
-                            "color": "Amarillo",
-                            "imagen": "assets/productos/80131.jpg",
-                            "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
-                            "tipo_embalaje": "Unidad",
-                            "cantidad_embalaje": 1
-                        },
-                        {
-                            "codigo": "80132",
-                            "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
-                            "material": "ABS",
-                            "tamano": "275 x 345 x 132cm",
-                            "color": "Rojo",
-                            "imagen": "assets/productos/80132.jpg",
-                            "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
-                            "tipo_embalaje": "Unidad",
-                            "cantidad_embalaje": 1
-                        },
-                        {
-                            "codigo": "80133",
-                            "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
-                            "material": "ABS",
-                            "tamano": "275 x 345 x 132cm",
-                            "color": "Verde",
-                            "imagen": "assets/productos/80133.jpg",
-                            "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
-                            "tipo_embalaje": "Unidad",
-                            "cantidad_embalaje": 1
-                        },
-                        {
-                            "codigo": "80134",
-                            "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
-                            "material": "ABS",
-                            "tamano": "275 x 345 x 132cm",
-                            "color": "Gris",
-                            "imagen": "assets/productos/80134.jpg",
-                            "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
-                            "tipo_embalaje": "Unidad",
-                            "cantidad_embalaje": 1
-                        }
-                    ]
-                },
-                {
-                    "id": "combos",
-                    "nombre": "Combos",
-                    "icono": "📦",
-                    "productos": [
-                        {
-                            "codigo": "203232",
-                            "nombre": "Tork® 4 Combos - Dispensador 201588 y 71178",
-                            "presentacion": "1 dispensador + 1 rollo",
-                            "imagen": "assets/productos/203232.png",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "200884",
-                            "nombre": "Tork® 6 Combos - Dispensador 83454 y 71198",
-                            "presentacion": "1 dispensador + 1 rollo",
-                            "imagen": "assets/productos/200884.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "200855",
-                            "nombre": "Tork® 6 Combos - Dispensador 83701 y 71612",
-                            "presentacion": "1 dispensador + 1 rollo",
-                            "imagen": "assets/productos/200855.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "83015",
-                            "nombre": "Tork® 6 Combos - Dispensador 83096 y 73528",
-                            "presentacion": "1 dispensador + 1 paquete",
-                            "imagen": "assets/productos/83015.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "83161",
-                            "nombre": "Tork® 4 Combos - Dispensador 83160 y 73689",
-                            "presentacion": "1 dispensador + 1 rollo",
-                            "imagen": "assets/productos/83161.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "83532",
-                            "nombre": "Tork® 12 Combos - Dispensador 83550 y 80550",
-                            "presentacion": "1 dispensador + 1 jabón",
-                            "imagen": "assets/productos/83532.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 12
-                        },
-                        {
-                            "codigo": "201229",
-                            "nombre": "Tork® 6 Combos - Dispensador 83530 y 80530/36",
-                            "presentacion": "1 dispensador + 1 jabón",
-                            "imagen": "assets/productos/201229.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "201275",
-                            "nombre": "Tork® 6 Combos - Dispensador 83510 y 80107",
-                            "presentacion": "1 dispensador + 1 gel",
-                            "imagen": "assets/productos/201275.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 6
-                        },
-                        {
-                            "codigo": "80109",
-                            "nombre": "Tork® 1 Combo - Dispensador 81080 y 74168",
-                            "presentacion": "1 dispensador + 1 rollo de limpión",
-                            "imagen": "assets/productos/80109.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 1
-                        },
-                        {
-                            "codigo": "200894",
-                            "nombre": "Tork® 4 Combos - Dispensador 80132 y 72144",
-                            "presentacion": "1 dispensador + 2 paquetes servilletas x 100",
-                            "imagen": "assets/productos/200894.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 4
-                        },
-                        {
-                            "codigo": "200895",
-                            "nombre": "Tork® 4 Combos - Dispensador 80134 y 72144",
-                            "presentacion": "1 dispensador + 2 paquetes servilletas x 100",
-                            "imagen": "assets/productos/200895.jpg",
-                            "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
-                            "tipo_embalaje": "Caja",
-                            "cantidad_embalaje": 4
-                        }
-                    ]
-                }
-            ]
+          "id": "higienicos-convencionales",
+          "nombre": "Higiénicos Convencionales",
+          "icono": "🧻",
+          "productos": [
+            {
+              "codigo": "201763",
+              "nombre": "Tork® Papel Higiénico Bajo Metraje",
+              "calidad": "Advanced",
+              "tamano": "35m x 13.5cm",
+              "capas": 3,
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/201763.jpg",
+              "descripcion": "El Papel Higiénico Convencional se destaca por su rendimiento confiable y su compromiso con la higiene. Presenta canales en espiral que mejoran la absorción, asegurando una sensación de limpieza y frescura. Además, su empaque individual protege el producto hasta su uso, manteniendo su integridad.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            },
+            {
+              "codigo": "201764",
+              "nombre": "Tork® Papel Higiénico Bajo Metraje",
+              "calidad": "Advanced",
+              "tamano": "22m x 11.2cm",
+              "capas": 3,
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/201764.jpg",
+              "descripcion": "El Papel Higiénico Convencional se destaca por su rendimiento confiable y su compromiso con la higiene. Presenta canales en espiral que mejoran la absorción, asegurando una sensación de limpieza y frescura. Además, su empaque individual protege el producto hasta su uso, manteniendo su integridad.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            }
+          ]
+        },
+        {
+          "id": "higienicos-jumbo",
+          "nombre": "Higiénicos Jumbo y SmartOne®",
+          "icono": "🧻",
+          "productos": [
+            {
+              "codigo": "71198",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Premium",
+              "tamano": "160m x 9.5cm",
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/71198.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "202580",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Advanced",
+              "tamano": "400m x 18.2cm",
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/202580.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso. Disponible en diferentes metrajes, se adapta a diversas necesidades de uso.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "71107",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Advanced",
+              "tamano": "400m x 18.2cm",
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/71107.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso. Disponible en diferentes metrajes, se adapta a diversas necesidades de uso.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "71457",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Advanced",
+              "tamano": "250m x 18.2cm",
+              "capas": 2,
+              "color": "Natural",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/71457.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso. Disponible en diferentes metrajes, se adapta a diversas necesidades de uso.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "202581",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Premium",
+              "tamano": "160m x 9.5cm",
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/202581.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "71187",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Premium",
+              "tamano": "160m x 9.5cm",
+              "capas": 2,
+              "color": "Natural",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/71187.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "71357",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Universal",
+              "tamano": "400m x 18.2cm",
+              "capas": 1,
+              "color": "Natural",
+              "sistema": "T2",
+              "fsc": true,
+              "imagen": "assets/productos/71357.jpg",
+              "descripcion": "El Papel Higiénico Jumbo Universal es una opción económica que ofrece un rendimiento confiable para instituciones con alto tráfico. Su diseño optimizado reduce el consumo y el desperdicio, manteniendo estándares de higiene.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "200868",
+              "nombre": "Tork® Higiénico Jumbo",
+              "calidad": "Premium",
+              "tamano": "160m x 9.5cm",
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "T2",
+              "fsc": false,
+              "imagen": "assets/productos/200868.jpg",
+              "descripcion": "El Papel Higiénico Jumbo ofrece un alto rendimiento y calidad. Con su hoja triple y embossing, proporciona una mayor absorción y suavidad para una experiencia cómoda. El dispensador incorpora un botón de frenado que evita el desperdicio al cortar el papel, y su diseño con precorte minimiza el mal uso.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 12
+            },
+            {
+              "codigo": "71613",
+              "nombre": "Tork SmartOne® Papel Higiénico",
+              "calidad": "Advanced",
+              "tamano": "27 x 20 x 40cm",
+              "metrosTotal": 200,
+              "capas": 2,
+              "color": "Natural",
+              "sistema": "T8",
+              "fsc": true,
+              "imagen": "assets/productos/71613.jpg",
+              "descripcion": "Tork SmartOne® Papel Higiénico está diseñado para ofrecer un rendimiento superior y características sostenibles. Con capacidad para abastecer un 40% más de usuarios, su sistema de dispensado 1 a 1 controla el consumo y reduce los costos ocultos. Cada hoja proporciona una mayor área de uso, garantizando una experiencia más cómoda para el usuario.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "71612",
+              "nombre": "Tork SmartOne® Mini Papel Higiénico",
+              "calidad": "Advanced",
+              "tamano": "27 x 14 x 15cm",
+              "metrosTotal": 100,
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "T8",
+              "fsc": true,
+              "imagen": "assets/productos/71612.jpg",
+              "descripcion": "Tork SmartOne® Mini Papel Higiénico está diseñado para ofrecer un rendimiento superior y características sostenibles. Su sistema de dispensado 1 a 1 controla el consumo y reduce los costos ocultos. Fácil de instalar y surtir, se adapta a múltiples espacios con facilidad.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 12
+            }
+          ]
+        },
+        {
+          "id": "toallas-flujo-central",
+          "nombre": "Toallas de Manos Flujo Central",
+          "icono": "🤲",
+          "productos": [
+            {
+              "codigo": "73689",
+              "nombre": "Tork® Toalla de Manos Flujo Central",
+              "calidad": "Premium",
+              "tamano": "54.6 x 36.4 x 19.6cm",
+              "metrosTotal": 100,
+              "capas": 3,
+              "color": "Natural",
+              "sistema": "M5",
+              "fsc": true,
+              "imagen": "assets/productos/73689.jpg",
+              "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "73748",
+              "nombre": "Tork® Toalla de Manos Flujo Central",
+              "calidad": "Advanced",
+              "tamano": "19.6 x 54 x 36cm",
+              "metrosTotal": 120,
+              "capas": 2,
+              "color": "Natural",
+              "sistema": "M5",
+              "fsc": true,
+              "imagen": "assets/productos/73748.jpg",
+              "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "73686",
+              "nombre": "Tork® Toalla de Manos Flujo Central",
+              "calidad": "Premium",
+              "tamano": "19.6 x 18.2 x 18.2cm",
+              "metrosTotal": 100,
+              "capas": 3,
+              "color": "Natural",
+              "sistema": "M5",
+              "fsc": false,
+              "imagen": "assets/productos/73686.jpg",
+              "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "73575",
+              "nombre": "Tork® Toalla de Manos Flujo Central",
+              "calidad": "Premium",
+              "tamano": "19.6 x 50 x 35cm",
+              "metrosTotal": 100,
+              "capas": 3,
+              "color": "Blanco",
+              "sistema": "M5",
+              "fsc": true,
+              "imagen": "assets/productos/73575.jpg",
+              "descripcion": "La Toalla de Manos Flujo Central ofrece una solución de higiene eficiente y sostenible. Con sistemas diseñados sin cuchillas ni mecanismos que garantizan un uso seguro y dispensadores fáciles de limpiar. El dispensado controlado 1 a 1 permite gestionar eficientemente el consumo.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 2
+            }
+          ]
+        },
+        {
+          "id": "toallas-dobladas-z",
+          "nombre": "Toallas de Manos Dobladas en Z",
+          "icono": "🤲",
+          "productos": [
+            {
+              "codigo": "200246",
+              "nombre": "Tork Xpress® Toalla de Manos",
+              "calidad": "Advanced",
+              "tamano": "21.5 x 8.6cm",
+              "hojas": 150,
+              "capas": 2,
+              "color": "Blanco",
+              "sistema": "H2",
+              "fsc": true,
+              "imagen": "assets/productos/200246.jpg",
+              "descripcion": "La Toalla de Manos Doblada en Z Tork Xpress® ofrece una solución integral con sistemas sin cuchillas ni mecanismos que aseguran un uso seguro. Su dispensado 1 a 1 controla eficientemente el consumo, mientras que su hoja doble con embossing brindan una buena absorción y resistencia.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            },
+            {
+              "codigo": "73554",
+              "nombre": "Tork Xpress® Toalla de Manos",
+              "calidad": "Premium",
+              "tamano": "21.5 x 8.6cm",
+              "hojas": 150,
+              "capas": 3,
+              "color": "Natural",
+              "sistema": "H2",
+              "fsc": true,
+              "imagen": "assets/productos/73554.jpg",
+              "descripcion": "La Toalla de Manos Doblada en Z Tork Xpress® ofrece una solución integral con sistemas sin cuchillas ni mecanismos que aseguran un uso seguro. Su dispensado 1 a 1 controla eficientemente el consumo, mientras que su hoja doble con embossing brindan una buena absorción y resistencia.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            },
+            {
+              "codigo": "73553",
+              "nombre": "Tork Xpress® Toalla de Manos",
+              "calidad": "Advanced",
+              "tamano": "21.5 x 8.6cm",
+              "hojas": 150,
+              "capas": 2,
+              "color": "Natural",
+              "sistema": "H2",
+              "fsc": false,
+              "imagen": "assets/productos/73553.jpg",
+              "descripcion": "La Toalla de Manos Doblada en Z Tork Xpress® ofrece una solución integral con sistemas sin cuchillas ni mecanismos que aseguran un uso seguro. Su dispensado 1 a 1 controla eficientemente el consumo, mientras que su hoja doble con embossing brindan una buena absorción y resistencia.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            }
+          ]
+        },
+        {
+          "id": "jabones",
+          "nombre": "Jabones",
+          "icono": "🧴",
+          "productos": [
+            {
+              "codigo": "80506",
+              "nombre": "Tork® Jabón Líquido Sistema",
+              "calidad": "Premium",
+              "dosis": 1000,
+              "litros": "1L",
+              "color": "Perla",
+              "sistema": "S1",
+              "imagen": "assets/productos/80506.png",
+              "descripcion": "Los jabones Tork® ofrecen soluciones de higiene de manos de alta calidad para entornos profesionales. Con fórmulas dermatológicamente probadas, proporcionan una limpieza eficaz y suavidad para la piel. Los dispensadores controlados permiten un dispensado preciso que reduce el desperdicio.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "80536",
+              "nombre": "Tork® Jabón en Espuma para Manos",
+              "calidad": "Premium",
+              "dosis": 2500,
+              "litros": "1L",
+              "sistema": "S4",
+              "imagen": "assets/productos/80536.jpg",
+              "descripcion": "Los jabones Tork® ofrecen soluciones de higiene de manos de alta calidad para entornos profesionales. Con fórmulas dermatológicamente probadas, proporcionan una limpieza eficaz y suavidad para la piel. Los dispensadores controlados permiten un dispensado preciso que reduce el desperdicio.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "80550",
+              "nombre": "Tork® Jabón Líquido Fragancia Suave",
+              "calidad": "Advanced",
+              "dosis": 475,
+              "litros": "475ml",
+              "color": "Perla",
+              "sistema": "S2",
+              "imagen": "assets/productos/80550.png",
+              "descripcion": "Los jabones Tork® ofrecen soluciones de higiene de manos de alta calidad para entornos profesionales. Con fórmulas dermatológicamente probadas, proporcionan una limpieza eficaz y suavidad para la piel. Los dispensadores controlados permiten un dispensado preciso que reduce el desperdicio.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 8
+            }
+          ]
+        },
+        {
+          "id": "panos-papel",
+          "nombre": "Paños de Papel",
+          "icono": "📄",
+          "productos": [
+            {
+              "codigo": "74079",
+              "nombre": "Tork® Limpión de Papel",
+              "tamano": "22.8 x 47 x 23.5cm",
+              "metrosTotal": 305,
+              "color": "Natural",
+              "sistema": "W1",
+              "fsc": true,
+              "imagen": "assets/productos/74079.jpg",
+              "descripcion": "Los limpiones y paños de papel Tork® están diseñados para trabajos exigentes en entornos industriales y de servicio de alimentos. Ofrecen alta resistencia y absorción, adaptándose a diversas tareas de limpieza profesional.",
+              "tipo_embalaje": "Paca",
+              "cantidad_embalaje": 2
+            },
+            {
+              "codigo": "74167",
+              "nombre": "Tork® Limpión de Papel Trabajo Pesado",
+              "tamano": "22.5 x 30.5 x 30.5cm",
+              "metrosTotal": 400,
+              "color": "Natural",
+              "sistema": "W1",
+              "fsc": true,
+              "imagen": "assets/productos/74167.jpg",
+              "descripcion": "Los limpiones y paños de papel Tork® están diseñados para trabajos exigentes en entornos industriales y de servicio de alimentos. Ofrecen alta resistencia y absorción, adaptándose a diversas tareas de limpieza profesional.",
+              "tipo_embalaje": "Rollo",
+              "cantidad_embalaje": 1
+            },
+            {
+              "codigo": "203800",
+              "nombre": "Tork Shopmax®",
+              "tamano": "23.5 x 27.9cm",
+              "metrosTotal": 14,
+              "color": "Azul",
+              "sistema": "W1",
+              "fsc": true,
+              "imagen": "assets/productos/203800.png",
+              "descripcion": "Los limpiones y paños de papel Tork® están diseñados para trabajos exigentes en entornos industriales y de servicio de alimentos. Ofrecen alta resistencia y absorción, adaptándose a diversas tareas de limpieza profesional.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 30
+            }
+          ]
+        },
+        {
+          "id": "panos-limpieza",
+          "nombre": "Paños de Limpieza",
+          "icono": "🧹",
+          "productos": [
+            {
+              "codigo": "74312",
+              "nombre": "Tork® Paño de Limpieza Resistente a los Olores",
+              "tamano": "33 x 61cm",
+              "presentacion": "10 paños x paquete",
+              "color": "Natural",
+              "imagen": "assets/productos/74312.jpg",
+              "descripcion": "Los paños de limpieza Tork® son reutilizables y resistentes a los olores, diseñados para múltiples tareas de limpieza. Su composición especial permite lavarlos y reutilizarlos hasta 150 veces sin perder eficacia.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 15
+            },
+            {
+              "codigo": "203390",
+              "nombre": "Tork® Paño de Limpieza Resistente",
+              "tamano": "42 x 28cm",
+              "presentacion": "100 paños x paquete",
+              "color": "Blanco",
+              "imagen": "assets/productos/203390.jpg",
+              "descripcion": "Los paños de limpieza Tork® son reutilizables y resistentes a los olores, diseñados para múltiples tareas de limpieza. Su composición especial permite lavarlos y reutilizarlos hasta 150 veces sin perder eficacia.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            }
+          ]
+        },
+        {
+          "id": "servilletas",
+          "nombre": "Servilletas Xpressnap®",
+          "icono": "🍽️",
+          "productos": [
+            {
+              "codigo": "72609",
+              "nombre": "Tork® Servilleta Cocktail",
+              "calidad": "Universal",
+              "tamano": "16.6 x 4.9cm",
+              "capas": 2,
+              "presentacion": "9 paquetes x 600 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/72609.jpg",
+              "descripcion": "Las servilletas Tork® Cocktail ofrecen la calidad básica para satisfacer las necesidades de cualquier institución. Su empaque dispensador permite al usuario retirar una servilleta a la vez, manteniendo la higiene.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 9
+            },
+            {
+              "codigo": "72611",
+              "nombre": "Tork® Servilleta Cocktail",
+              "calidad": "Universal",
+              "tamano": "14.5 x 8.1cm",
+              "capas": 1,
+              "presentacion": "32 paquetes x 150 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/72611.jpg",
+              "descripcion": "Las servilletas Tork® Cocktail ofrecen la calidad básica para satisfacer las necesidades de cualquier institución. Su empaque dispensador permite al usuario retirar una servilleta a la vez, manteniendo la higiene.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 32
+            },
+            {
+              "codigo": "200639",
+              "nombre": "Tork Plus® Cocktail",
+              "calidad": "Universal",
+              "tamano": "28.2 x 9cm",
+              "capas": 1,
+              "presentacion": "20 paquetes x 200 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/200639.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 20
+            },
+            {
+              "codigo": "200690",
+              "nombre": "Tork Plus® Cocktail",
+              "calidad": "Universal",
+              "tamano": "27.5 x 16.8cm",
+              "capas": 1,
+              "presentacion": "20 paquetes x 200 servilletas",
+              "color": "Natural",
+              "fsc": true,
+              "imagen": "assets/productos/200690.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 20
+            },
+            {
+              "codigo": "72145",
+              "nombre": "Tork Plus® Servilleta Dispensada",
+              "calidad": "Universal",
+              "tamano": "35 x 8cm",
+              "capas": 1,
+              "presentacion": "9 paquetes x 550 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/72145.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 9
+            },
+            {
+              "codigo": "72679",
+              "nombre": "Tork Plus® Servilleta Dispensada",
+              "calidad": "Advanced",
+              "tamano": "9.6 x 13.5cm",
+              "capas": 2,
+              "presentacion": "36 paquetes x 150 servilletas",
+              "color": "Natural",
+              "fsc": true,
+              "imagen": "assets/productos/72679.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 36
+            },
+            {
+              "codigo": "72144",
+              "nombre": "Tork Plus® Servilleta Dispensada",
+              "calidad": "Universal",
+              "tamano": "8.2 x 7.3cm",
+              "capas": 1,
+              "presentacion": "45 paquetes x 100 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/72144.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 45
+            },
+            {
+              "codigo": "200115",
+              "nombre": "Tork® Servilleta Acolchada Lunch",
+              "calidad": "Advanced",
+              "tamano": "16.6 x 4.9cm",
+              "capas": 2,
+              "presentacion": "24 paquetes x 100 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/200115.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            },
+            {
+              "codigo": "72506",
+              "nombre": "Tork® Servilleta Dinner",
+              "calidad": "Premium",
+              "tamano": "16.6 x 4.9cm",
+              "capas": 2,
+              "presentacion": "24 paquetes x 50 servilletas",
+              "color": "Blanco",
+              "fsc": false,
+              "imagen": "assets/productos/72506.jpg",
+              "descripcion": "Las servilletas Tork Plus® ofrecen un sistema de dispensado 1 a 1 para controlar el consumo y reducir el desperdicio. Su diseño permite tocar solo la servilleta necesaria, garantizando la higiene en todo momento.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 24
+            },
+            {
+              "codigo": "202223",
+              "nombre": "Tork Xpressnap® Classic Café",
+              "calidad": "Advanced",
+              "tamano": "10.8 x 10.8cm",
+              "capas": 1,
+              "presentacion": "12 paquetes x 500 servilletas",
+              "color": "Blanco",
+              "fsc": true,
+              "imagen": "assets/productos/202223.jpg",
+              "descripcion": "La Servilleta Dispensada Tork XpressNap® es la solución perfecta para entornos comerciales y públicos que buscan rendimiento, higiene y sostenibilidad. Con su sistema de dispensado 1 a 1, controla eficazmente el consumo, mientras ofrece hasta un 45% más de absorción que otras servilletas.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 12
+            }
+          ]
+        },
+        {
+          "id": "dispensadores",
+          "nombre": "Dispensadores",
+          "icono": "🏗️",
+          "productos": [
+            {
+              "codigo": "80131",
+              "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
+              "material": "ABS",
+              "tamano": "275 x 345 x 132cm",
+              "color": "Amarillo",
+              "imagen": "assets/productos/80131.jpg",
+              "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
+              "tipo_embalaje": "Unidad",
+              "cantidad_embalaje": 1
+            },
+            {
+              "codigo": "80132",
+              "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
+              "material": "ABS",
+              "tamano": "275 x 345 x 132cm",
+              "color": "Rojo",
+              "imagen": "assets/productos/80132.jpg",
+              "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
+              "tipo_embalaje": "Unidad",
+              "cantidad_embalaje": 1
+            },
+            {
+              "codigo": "80133",
+              "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
+              "material": "ABS",
+              "tamano": "275 x 345 x 132cm",
+              "color": "Verde",
+              "imagen": "assets/productos/80133.jpg",
+              "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
+              "tipo_embalaje": "Unidad",
+              "cantidad_embalaje": 1
+            },
+            {
+              "codigo": "80134",
+              "nombre": "Dispensador Tork Plus® Servilleta Dispensada 100",
+              "material": "ABS",
+              "tamano": "275 x 345 x 132cm",
+              "color": "Gris",
+              "imagen": "assets/productos/80134.jpg",
+              "descripcion": "Los dispensadores Tork® combinan funcionalidad y diseño para adaptarse a cualquier espacio profesional. Fabricados en ABS de alta resistencia, están diseñados para un uso intensivo y fácil mantenimiento.",
+              "tipo_embalaje": "Unidad",
+              "cantidad_embalaje": 1
+            }
+          ]
+        },
+        {
+          "id": "combos",
+          "nombre": "Combos",
+          "icono": "📦",
+          "productos": [
+            {
+              "codigo": "203232",
+              "nombre": "Tork® 4 Combos - Dispensador 201588 y 71178",
+              "presentacion": "1 dispensador + 1 rollo",
+              "imagen": "assets/productos/203232.png",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "200884",
+              "nombre": "Tork® 6 Combos - Dispensador 83454 y 71198",
+              "presentacion": "1 dispensador + 1 rollo",
+              "imagen": "assets/productos/200884.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "200855",
+              "nombre": "Tork® 6 Combos - Dispensador 83701 y 71612",
+              "presentacion": "1 dispensador + 1 rollo",
+              "imagen": "assets/productos/200855.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "83015",
+              "nombre": "Tork® 6 Combos - Dispensador 83096 y 73528",
+              "presentacion": "1 dispensador + 1 paquete",
+              "imagen": "assets/productos/83015.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "83161",
+              "nombre": "Tork® 4 Combos - Dispensador 83160 y 73689",
+              "presentacion": "1 dispensador + 1 rollo",
+              "imagen": "assets/productos/83161.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "83532",
+              "nombre": "Tork® 12 Combos - Dispensador 83550 y 80550",
+              "presentacion": "1 dispensador + 1 jabón",
+              "imagen": "assets/productos/83532.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 12
+            },
+            {
+              "codigo": "201229",
+              "nombre": "Tork® 6 Combos - Dispensador 83530 y 80530/36",
+              "presentacion": "1 dispensador + 1 jabón",
+              "imagen": "assets/productos/201229.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "201275",
+              "nombre": "Tork® 6 Combos - Dispensador 83510 y 80107",
+              "presentacion": "1 dispensador + 1 gel",
+              "imagen": "assets/productos/201275.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 6
+            },
+            {
+              "codigo": "80109",
+              "nombre": "Tork® 1 Combo - Dispensador 81080 y 74168",
+              "presentacion": "1 dispensador + 1 rollo de limpión",
+              "imagen": "assets/productos/80109.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 1
+            },
+            {
+              "codigo": "200894",
+              "nombre": "Tork® 4 Combos - Dispensador 80132 y 72144",
+              "presentacion": "1 dispensador + 2 paquetes servilletas x 100",
+              "imagen": "assets/productos/200894.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 4
+            },
+            {
+              "codigo": "200895",
+              "nombre": "Tork® 4 Combos - Dispensador 80134 y 72144",
+              "presentacion": "1 dispensador + 2 paquetes servilletas x 100",
+              "imagen": "assets/productos/200895.jpg",
+              "descripcion": "Los combos Tork® incluyen un dispensador y el producto correspondiente, ofreciendo una solución completa y lista para instalar. Ideal para equipar cualquier espacio profesional con la garantía de compatibilidad y rendimiento Tork.",
+              "tipo_embalaje": "Caja",
+              "cantidad_embalaje": 4
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

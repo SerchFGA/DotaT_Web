@@ -130,9 +130,9 @@ function renderProducts(products) {
           <span class="product-card__brand">Tork</span>
           ${p.calidad ? `<span class="product-card__quality ${qualityClass}">${p.calidad}</span>` : ''}
           <h4 class="product-card__name" style="cursor:pointer;" onclick="openDrawer('${p.codigo}')">${p.nombre}</h4>
-          <p class="product-card__code">Cód. ${p.codigo} · ${p.presentacion || ''}</p>
+          <p class="product-card__code">Cód. ${p.codigo}${p.presentacion ? ' · ' + p.presentacion : ''}${p.tipo_embalaje ? ' · <strong>' + p.tipo_embalaje + (p.cantidad_embalaje > 1 ? ' × ' + p.cantidad_embalaje : '') + '</strong>' : ''}</p>
           ${specs.length > 0 ? `<p style="font-size:0.8rem;color:var(--color-text-muted);margin:0.25rem 0 0;">${specs.join(' · ')}</p>` : ''}
-          ${p.tipo_embalaje ? `<span class="product-card__embalaje">📦 ${p.tipo_embalaje}${p.cantidad_embalaje > 1 ? ' × ' + p.cantidad_embalaje : ''}</span>` : ''}
+
         </div>
         <div class="product-card__footer">
           <a href="contacto.html?producto=${p.codigo}" class="btn btn--primary" style="flex:1;">Cotizar</a>
@@ -207,7 +207,10 @@ function openDrawer(codigo) {
 
     // Name & Code
     document.getElementById('drawer-name').textContent = product.nombre;
-    document.getElementById('drawer-code').textContent = `Código: ${product.codigo} · ${product.presentacion || ''}`;
+    const embalajeStr = product.tipo_embalaje
+        ? ` · ${product.tipo_embalaje}${product.cantidad_embalaje > 1 ? ' × ' + product.cantidad_embalaje : ''}`
+        : '';
+    document.getElementById('drawer-code').innerHTML = `Código: ${product.codigo}${product.presentacion ? ' · ' + product.presentacion : ''}<strong>${embalajeStr}</strong>`;
 
     // Description (shown only if available)
     const descSection = document.getElementById('drawer-description');
